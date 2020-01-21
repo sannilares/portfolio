@@ -1,0 +1,11 @@
+.designFlex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.gridHover {
+    background-color: darkblue;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,67 @@
+.introGrid {
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-gap: 16px;
+  padding-top: 24px;
+}
+
+.introGridSmall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.introduction {
+  padding-left: 16px;
+}
+
+.contactInfo {
+  text-align: center;
+}
+
+.experienceGrid {
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-gap: 16px;
+  grid-template-rows: 2ch auto minmax(5px, 10px);
+
+}
+
+.experienceGridSmall {
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-template-rows: 3ch 3ch minmax(5px, 20px);
+}
+
+.experienceGridSmall > .workTime {
+  text-align: right;
+}
+
+.workTitle { 
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+.workTitle:first-child {
+  font-size: 20px;
+  color: rgb(214, 124, 40);
+}
+
+.workTime {
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+}
+
+.headline {
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  display: grid;
+  grid-template-rows: 1ch;
+}
+
+.title {
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+}
+
