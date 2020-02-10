@@ -1,0 +1,82 @@
+/* Headlines */
+    .headlineContainer {
+        margin: 20px;
+        display: block;
+    }
+    
+    .block {
+        display: inline-block;
+        height: 76px;
+        background-color: rgba(75, 145, 148, 0.815);
+        width: 147px;
+    }
+
+    .blockHeader {
+        display: inline-block;
+        position: absolute;
+        left: 116px;
+        color: black;
+        text-transform: uppercase;
+        font-size: 50px;
+        letter-spacing: 0px;
+        margin: 0;
+        align-self: start;
+        width: 60%;
+        font-family: 'Raleway', sans-serif;
+        margin-top: 7px;
+    }
+
+    .bH2 {
+        position: absolute;
+        left: 106px;
+    }
+
+    /* Gallery itself */
+    .galleryContainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    .description {
+        padding: 40px;
+        padding-top: 0;
+        width: 20%;
+        justify-self: center;
+
+    }
+
+    .descHeadline {
+        margin: 0;
+        font-weight: 400;
+        font-size: 26px;
+        position: sticky;
+        top: 80px;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .descText {
+        font-size: 18px;
+        color: black;
+        text-transform: none;
+        padding: 20px;
+    }
+
+    .gridImg { 
+        transition: 0.7s;
+    }
+
+    .gridImg:hover {
+        transform: scale(1.03);
+    }
+
+    /* Background color */
+    .rightBg {
+        background-color: rgba(95, 158, 160, 0.349);
+        width: 30%;
+        height: 100%;
+        z-index: -1;
+        position: absolute;
+        right: 0;
+}

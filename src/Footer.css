@@ -16,3 +16,9 @@
     color: cornsilk;
     margin-bottom: 0;
 }
+
+.linkedin {
+    width: 14px;
+    margin-right: 2px;
+    filter: brightness(0) invert(1);
+}

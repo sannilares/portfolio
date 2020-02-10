@@ -1,5 +1,5 @@
-import image1 from './assets/Tuotekuva-Asetelma-154.jpg';
-import image2 from './assets/muoti.JPG';
+import image1 from './assets/Tuotekuva-Asetelma-154-min.jpg';
+import image2 from './assets/muoti-min.JPG';
 import image3 from './assets/Portfolio_kuva.jpg';
 
 const designData = [

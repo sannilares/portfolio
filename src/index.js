@@ -3,8 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import fi from './languages/fi.json';
+import en from './languages/en.json';
+import { IntlProvider } from 'react-intl';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const translations = {
+    "fi": fi,
+    "en": en
+}
+
+const lang = localStorage.getItem("language") || "fi"
+
+ReactDOM.render(
+    <IntlProvider messages={translations[lang]}>
+        <App />
+    </IntlProvider>,
+    document.getElementById('root')
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

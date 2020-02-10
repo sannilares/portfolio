@@ -1,6 +1,6 @@
 .introGrid {
   display: grid;
-  grid-template-columns: 20% auto;
+  grid-template-columns: 40% auto;
   grid-gap: 16px;
   padding-top: 24px;
 }
@@ -12,30 +12,67 @@
   padding-top: 24px;
 }
 
-.introduction {
-  padding-left: 16px;
-}
-
-.contactInfo {
-  text-align: center;
-}
-
 .experienceGrid {
   display: grid;
-  grid-template-columns: 20% auto;
+  grid-template-columns: 40% auto;
   grid-gap: 16px;
-  grid-template-rows: 2ch auto minmax(5px, 10px);
+  grid-template-rows: 2ch auto;
+}
 
+.experienceGrid > .workTime {
+  padding-right: 40px;
 }
 
 .experienceGridSmall {
   display: grid;
   grid-template-columns: 60% auto;
-  grid-template-rows: 3ch 3ch minmax(5px, 20px);
+  grid-template-rows: 4ch 3ch;
+  padding-left: 0;
 }
 
-.experienceGridSmall > .workTime {
-  text-align: right;
+.skillGrid {
+  display: grid;
+  grid-template-columns: 40% 20% auto;
+  grid-gap: 16px;
+  grid-template-rows: 1ch auto;
+}
+
+.meImg {
+  height: 60vh;
+  max-width: 80%;
+}
+
+/* Text styling */
+.contactInfo{
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-align: center;
+  margin-right: 64px;
+}
+
+.introTitle {
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.title {
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 40%;
+  margin-left: 14px;
+  color: rgb(22, 94, 97);
+}
+
+.titleSmall {
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  width: 80%;
+  color: rgb(22, 94, 97);
 }
 
 .workTitle { 
@@ -43,25 +80,58 @@
   font-size: 18px;
 }
 
+.skillTitle { 
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+
 .workTitle:first-child {
   font-size: 20px;
-  color: rgb(214, 124, 40);
+  text-align: right;
+  padding-right: 40px;
+  color: white;
+}
+
+.workCompanySmall {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;  
+  width: 80%;
+}
+
+.workTitleSmall {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  padding-right: 40px;
+  color: white;
 }
 
 .workTime {
-    font-family: 'Raleway', sans-serif;
-    color: grey;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(254, 255, 179);
+  text-align: right;
 }
+
+/* .workTimeSmall {
+  font-family: 'Raleway', sans-serif;
+  color: grey;
+  text-align: right;
+} */
 
 .headline {
   font-size: 30px;
   font-family: 'Raleway', sans-serif;
   display: grid;
   grid-template-rows: 1ch;
+  color: whitesmoke;
 }
 
-.title {
-  font-size: 22px;
-  font-family: 'Raleway', sans-serif;
-}
 
+/* Color in the background */
+.leftBg {
+  /* background-color: rgb(254, 255, 179); */
+  background-color: cadetblue;
+  width: 40%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+}
