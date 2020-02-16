@@ -12,10 +12,14 @@
   padding-top: 24px;
 }
 
+.introduction {
+  padding-left: 36px;
+}
+
 .experienceGrid {
   display: grid;
   grid-template-columns: 40% auto;
-  grid-gap: 16px;
+  grid-gap: 36px;
   grid-template-rows: 2ch auto;
 }
 
@@ -32,17 +36,54 @@
 
 .skillGrid {
   display: grid;
-  grid-template-columns: 40% 20% auto;
-  grid-gap: 16px;
+  grid-template-columns: 40% 16% auto;
+  grid-gap: 36px;
   grid-template-rows: 1ch auto;
+}
+
+.meImgContainer {
+  width: calc(100% - 64px);
+  display: flex;
+  justify-content: center;
 }
 
 .meImg {
   height: 60vh;
   max-width: 80%;
+  object-fit: cover;
 }
 
-/* Text styling */
+/* Skills */
+.skillContainer {
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+
+.skill {
+  background-color: rgb(33, 131, 138);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  color: white;
+}
+
+.noGrade {
+  display: none;
+}
+
+.awe {
+  width: 90%; 
+}
+
+.good {
+  width: 60%; 
+}
+
+.ok {
+  width: 30%; 
+}
+
+/* Contact information */
 .contactInfo{
   color: whitesmoke;
   margin: 0;
@@ -54,17 +95,38 @@
   margin-right: 64px;
 }
 
+.icon {
+  filter: brightness(0) invert(1);
+  display: inline-block;
+  height: 16px;
+  padding-right: 6px;
+  margin-bottom: -2px;
+}
+
+.icon2 {
+  filter: brightness(0) invert(1);
+  height: 16px;
+  margin-bottom: -2px;
+}
+
+/* Text styling */
 .introTitle {
-  font-size: 22px;
+  font-size: 26px;
   font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+
+.introText {
+  font-size: 1.1rem;
 }
 
 .title {
   font-size: 22px;
   font-family: 'Raleway', sans-serif;
   padding-left: 40%;
-  margin-left: 14px;
+  margin-left: 24px;
   color: rgb(22, 94, 97);
+  margin-top: 30px;
 }
 
 .titleSmall {
@@ -125,10 +187,14 @@
   color: whitesmoke;
 }
 
+.cvHeadline {
+  padding-left: 2vw;
+  padding-top: 2vh;
+}
+
 
 /* Color in the background */
 .leftBg {
-  /* background-color: rgb(254, 255, 179); */
   background-color: cadetblue;
   width: 40%;
   height: 100%;

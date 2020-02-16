@@ -3,7 +3,6 @@ import './App.css';
 import Navbar from './Navbar.js'
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import Gallery from './Gallery.js';
 import FrontPage from './FrontPage.js';
 import Design from './Design.js';
 import Footer from './Footer.js';

@@ -2,7 +2,7 @@ import React from 'react';
 // import Container from '@material-ui/core/Container';
 import './Design.css';
 // import designData from './designData.js';
-import mina from './assets/Portfolio_kuva.jpg';
+import mina from './assets/minä.jpg';
 import linkedin from './assets/LI-In-Bug.png';
 import { makeStyles } from '@material-ui/core/styles';
 import Gallery from './Gallery';
@@ -58,19 +58,11 @@ function Design() {
                     <div style={{ width: "50%" }}>
                         <p id="helloText">Hei<span class="lastChar">.</span></p>
                         <p>Ja tervetuloa tutustumaan portfoliooni!</p>
-                        <p style={{ fontSize: "36px", margin: "0" }}>Käyttäjä, design ja tekniikka.</p>
+                        <p>Käyttäjä, design ja tekniikka.</p>
                         <p>Aalto-yliopisto  informatioverkostot</p>
                     </div>
                 </div>
             </div>
-            {/* <Container maxWidth="lg">
-                <div className="designFlex">
-                    {designData.map(tile =>
-                        <Categories category={tile} />
-                    )}
-                </div>
-
-            </Container> */}
             <Gallery />
         </div >
     );

@@ -8,6 +8,7 @@
 
 .headerImg {
   height: 100%;
+  object-fit: cover;
 }
 
 .headerText {
@@ -23,17 +24,21 @@
   justify-content: center;
   height: 100%;
   align-items: center;
-  font-family: 'Cutive Mono', monospace;
+  letter-spacing: 2px;
+  font-family: 'Raleway', sans-serif;
 }
 
 #helloText {
+  font-family: 'Tomorrow', sans-serif;
   font-size: 100px;
   margin: 0;
 }
 
 .lastChar {
   color: red;
-  font-size: 150px;
+  font-size: 170px;
+  font-family: 'Cutive Mono', monospace;
+  margin: -30px;
 }
 
 .designFlex {
@@ -84,6 +89,7 @@
   text-transform: none;
   font-size: 1.3rem;
   font-weight: 300;
+  letter-spacing: 0;
 }
 
 #inImage {

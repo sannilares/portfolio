@@ -71,6 +71,21 @@
         transform: scale(1.03);
     }
 
+    .gridList {
+        width: 700px;
+        height: 600px;
+        overflow: hidden;
+        overflow-y: hidden;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow: hidden;
+        padding: 40px;
+    }
+
     /* Background color */
     .rightBg {
         background-color: rgba(95, 158, 160, 0.349);
@@ -80,3 +95,11 @@
         position: absolute;
         right: 0;
 }
+
+    /* @media (min-width: 1280px) {
+        .gridList {
+            width: 50vw;
+            height: 80vh;
+            padding-left: 10vw;
+        }  
+    } */
