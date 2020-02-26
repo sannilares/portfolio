@@ -9,7 +9,7 @@ import { Divider } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import ReactDOM from 'react-dom';
 import { useTheme } from '@material-ui/core/styles';
-import { FormattedMessage, FormattedHTMLMessage, injectIntl } from 'react-intl';
+import { FormattedMessage, injectIntl } from 'react-intl';
 
 // Jos haetaan ulkopuolista dataa, on kieli määriteltävä erikseen fallbackeineen
 const lang = localStorage.getItem("language") || "fi"
@@ -32,10 +32,10 @@ function ColorPortal() {
 
 function Gallery({ intl }) {
     const bigScreen = useMediaQuery(useTheme().breakpoints.up('lg'));
-    const [headline, setHeadline] = useState(intl.formatMessage({ 'id': 'headline' }));
-    const [description, setDescription] = useState("Siirrä kursori kuvan päälle saadaksesi lisää tietoa.");
+    const [headline, setHeadline] = useState(intl.formatMessage({ 'id': 'cursorHeadline' }));
+    const [description, setDescription] = useState(intl.formatMessage({ 'id': 'cursor' }));
     const cellHeight = bigScreen ? 270 : 195
-    const webCellHeight = bigScreen ? 400 : 292
+    const webCellHeight = bigScreen ? 340 : 292
     // console.log(bigScreen)
     return (
         <div>
@@ -53,7 +53,7 @@ function Gallery({ intl }) {
                             <GridListTile component="div" className="gridImg" key={tile.img} cols={tile.cols || 1}>
                                 <img onMouseOver={() => {
                                     setHeadline(tile.title[lang])
-                                    setDescription(tile.desc)
+                                    setDescription(tile.desc[lang])
                                 }} src={tile.img} alt={tile.title} />
                             </GridListTile>
                         ))}
@@ -81,18 +81,11 @@ function Gallery({ intl }) {
                             <GridListTile component="div" className="gridImg" key={tile.img} cols={tile.cols || 1}>
                                 <img onMouseOver={() => {
                                     setHeadline(tile.title[lang])
-                                    setDescription(tile.desc)
+                                    setDescription(tile.desc[lang])
                                 }} src={tile.img} alt={tile.title} />
                             </GridListTile>
                         ))}
                     </GridList>
-                </div>
-                <div className="description">
-                    <div className="descHeadline">
-                        <h2>{headline}</h2>
-                        <Divider light={true} />
-                        <p className="descText">{description}</p>
-                    </div>
                 </div>
             </div>
 
@@ -109,18 +102,11 @@ function Gallery({ intl }) {
                             <GridListTile component="div" className="gridImg" key={tile.img} cols={tile.cols || 1}>
                                 <img onMouseOver={() => {
                                     setHeadline(tile.title[lang])
-                                    setDescription(tile.desc)
+                                    setDescription(tile.desc[lang])
                                 }} src={tile.img} alt={tile.title} />
                             </GridListTile>
                         ))}
                     </GridList>
-                </div>
-                <div className="description">
-                    <div className="descHeadline">
-                        <h2>{headline}</h2>
-                        <Divider light={true} />
-                        <p className="descText">{description}</p>
-                    </div>
                 </div>
             </div>
         </div>

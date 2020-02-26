@@ -34,7 +34,6 @@ function HideOnScroll(props) {
 
 function NavLink(props) {
     const { url, component, active } = props;
-    const theme = useTheme();
     return (
         < Link to={url} style={{ textDecoration: "none", color: "black", borderBottom: (active ? "3px solid black" : "") }}>
             {component}

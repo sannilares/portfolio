@@ -61,10 +61,13 @@
 
 .skill {
   background-color: rgb(33, 131, 138);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   border-radius: 2px;
   color: white;
+  text-align: end;
+  padding-right: 16px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .noGrade {

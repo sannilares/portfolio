@@ -13,7 +13,10 @@ const tileData = [
             en: 'From Eira to Niemi'
         },
         cols: 2,
-        desc: 'Lopputyöni Valokuvauksen perusteet kurssilla, jossa tehtävänä oli tehdä kuvasarja itselle tärkeästä asiasta. Päädyin kuvaamaan rakastamiani seutuja ja arkkitehtuuria Helsingin ydinkeskustasta ja Otaniemestä.',
+        desc: {
+            fi: 'Lopputyöni Valokuvauksen perusteet kurssilla, jossa tehtävänä oli tehdä kuvasarja itselle tärkeästä asiasta. Päädyin kuvaamaan rakastamiani seutuja ja arkkitehtuuria Helsingin ydinkeskustasta ja Otaniemestä.',
+            en: 'My final assignment in a course of photography. I was asked to make a serie of images, related to something important for me. I ended up capturing small details in locations that I love.',
+        },
     },
     {
         img: image2,
@@ -22,7 +25,10 @@ const tileData = [
             en: 'Fashion image'
         },
         cols: 1,
-        desc: 'Malli valmiina, tehtävänä kuvata muotikuva. Lähestyin tehtävää korostamalla nahkatakkia ja siihen osuvaa valoa.',
+        desc: {
+            fi: 'Malli valmiina, tehtävänä kuvata muotikuva. Lähestyin tehtävää korostamalla nahkatakkia ja siihen osuvaa valoa.',
+            en: 'With given model, the excersise was to take an fashion image. I approached the task by highlithing the leatherjacket with an absend-minded feeling.',
+        },
     },
     {
         img: image1,
@@ -31,7 +37,10 @@ const tileData = [
             en: 'Dark still life'
         },
         cols: 1,
-        desc: 'Studiossa kuvattu tumma kuva. Tehtävänä oli leikkiä eri materiaaleilla, valoilla ja varjoilla.',
+        desc: {
+            fi: 'Studiossa kuvattu tumma kuva. Tehtävänä oli leikkiä eri materiaaleilla, valoilla ja varjoilla.',
+            en: 'Playing with materials, lights and shadows. Image was taken in studio.',
+        },
     },
     {
         img: image7,
@@ -40,7 +49,10 @@ const tileData = [
             en: 'Motion'
         },
         cols: 2,
-        desc: 'Työssä pyydettiin kuvaamaan liikettä. Lähestyin tehtävää miettien, miten ihmiselle hyvin arkipäiväinen pieni liike näkyy kameran läpi katsottuna.',
+        desc: {
+            fi: 'Työssä pyydettiin kuvaamaan liikettä. Lähestyin tehtävää miettien, miten ihmiselle hyvin arkipäiväinen pieni liike näkyy kameran läpi katsottuna.',
+            en: 'Capturing motion. I approached this excersise thinking, how the little movement of our everyday life would look like through lence.',
+        },
     },
     {
         img: image3,
@@ -49,7 +61,10 @@ const tileData = [
             en: 'Self group portrait'
         },
         cols: 2,
-        desc: 'Otimme ryhmän omankuvan, kukin kuvaten oman osuutemme ja luoden jatkumon muiden töihin.',
+        desc: {
+            fi: 'Otimme ryhmän omankuvan, kukin kuvaten oman osuutemme ja luoden jatkumon muiden töihin.',
+            en: 'Self portrait of our photography group.',
+        },
     },
     {
         img: image4,
@@ -58,8 +73,35 @@ const tileData = [
             en: 'Black and white'
         },
         cols: 1,
-        desc: 'Tehtävänä oli kuvata ja editoida kuva, joka on musta-valkoisena alkuperäistä parempi ja selkeämpi. Päätin ottaa erittäin tylsän värisessä ympäristössä kuvan kamerasta, jonka näytön pikselit eivät näyttäneet kauniilta kameran linssin läpi alkuperäisessä versiossa.',
+        desc: {
+            fi: 'Tehtävänä oli kuvata ja editoida kuva, joka on musta-valkoisena alkuperäistä parempi ja selkeämpi. Päätin ottaa erittäin tylsän värisessä ympäristössä kuvan kamerasta, jonka näytön pikselit eivät näyttäneet kauniilta kameran linssin läpi alkuperäisessä versiossa.',
+            en: 'Image, that needed to look better in greyscale.',
+        },
     },
+    // {
+    //     img: image4,
+    //     title: {
+    //         fi: 'Lopputyö',
+    //         en: 'Final assignment'
+    //     },
+    //     cols: 1,
+    //     desc: {
+    //         fi: 'Kurssin digitaalinen media lopputyö, tehtävänä kuvata ja editoida video uudesta näkökulmasta. Tein videon, joka kertoo mitä kaikkea meistä voi päätellä ihan jo vain kenkiä katselemalla.',
+    //         en: 'The final assignment of course Digital media, where I needed to film and edit video about new perspective. I approached this thinking how just our feet shows a lot of our wants and thoughts.',
+    //     },
+    // },
+    // {
+    //     img: image4,
+    //     title: {
+    //         fi: 'Näkökulmia kauneuteen',
+    //         en: 'Beautiful aspects'
+    //     },
+    //     cols: 1,
+    //     desc: {
+    //         fi: 'Yksi ensimmäisistä kosketuksistani videoiden tekemiseen. Tehtävänä oli tehdä video arjen askareesta, missä käyttää mahdollisimman paljon erilaisia kuvakulmia. Tehtävä oli myös ensimmäinen kerta kun käytin Premiereä: tulitikku, joka sytytti palon videoiden muokkaamiselle!',
+    //         en: 'This was one of my first videos. The excersise was to make a video about a common habit, using as many angle of views as possible. This was also the first time that I ever used Premiere, and I fell in love immidiately.',
+    //     },
+    // },
 ];
 
 export default tileData;

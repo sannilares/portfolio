@@ -39,10 +39,14 @@
     }
 
     .description {
-        padding: 40px;
-        padding-top: 0;
+        padding: 5%;
+        padding-top: 10vh;
         width: 20%;
         justify-self: center;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 100vh;
 
     }
 

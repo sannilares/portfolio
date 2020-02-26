@@ -9,16 +9,15 @@ import Footer from './Footer.js';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#ffee39",
-      light: "#ffff71",
-      dark: "#ffe122",
+      main: "#e0f7fa",
+      light: "#33c9dc",
+      dark: "#1769aa",
     },
     secondary: {
       main: '#fff160',
