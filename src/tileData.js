@@ -4,6 +4,10 @@ import image3 from './assets/Ryhmäkuva_2019-min.jpg';
 import image4 from './assets/kamera-min.JPG';
 import image6 from './assets/Lopputyö.png';
 import image7 from './assets/portaat-min.JPG';
+import video1 from './assets/kauneus.webm';
+import video2 from './assets/uncover.webm';
+import videoImg1 from './assets/videoImg.png';
+import videoImg2 from './assets/videoImg2.png';
 
 const tileData = [
     {
@@ -43,15 +47,16 @@ const tileData = [
         },
     },
     {
-        img: image7,
+        img: videoImg2,
+        video: video2,
         title: {
-            fi: 'Liike',
-            en: 'Motion'
+            fi: 'Korkojen kertomaa',
+            en: 'Story by heels'
         },
         cols: 2,
         desc: {
-            fi: 'Työssä pyydettiin kuvaamaan liikettä. Lähestyin tehtävää miettien, miten ihmiselle hyvin arkipäiväinen pieni liike näkyy kameran läpi katsottuna.',
-            en: 'Capturing motion. I approached this excersise thinking, how the little movement of our everyday life would look like through lence.',
+            fi: 'Kurssin digitaalinen media lopputyö, tehtävänä kuvata ja editoida video uudesta näkökulmasta. Tein videon, joka kertoo mitä kaikkea meistä voi päätellä ihan jo vain kenkiä katselemalla.',
+            en: 'The final assignment of course Digital media, where I needed to film and edit video about new perspective. I approached this thinking how just our feet shows a lot of our wants and thoughts.',
         },
     },
     {
@@ -78,6 +83,35 @@ const tileData = [
             en: 'Image, that needed to look better in greyscale.',
         },
     },
+    {
+        img: videoImg1,
+        video: video1,
+        title: {
+            fi: 'Näkökulmia kauneuteen',
+            en: 'Beautiful aspects'
+        },
+        cols: 1,
+        desc: {
+            fi: 'Yksi ensimmäisistä kosketuksistani videoiden tekemiseen. Tehtävänä oli tehdä video arjen askareesta, missä käyttää mahdollisimman paljon erilaisia kuvakulmia. Tehtävä oli myös ensimmäinen kerta kun käytin Premiereä: tulitikku, joka sytytti palon videoiden muokkaamiselle! ',
+            en: 'This was one of my first videos. The exercise was to make a video about a common habit, using as many angle of views as possible. This was also the first time that I ever used Premiere, and I fell in love immediately.',
+        },
+    },
+    {
+        img: image7,
+        title: {
+            fi: 'Liike',
+            en: 'Motion'
+        },
+        cols: 2,
+        desc: {
+            fi: 'Työssä pyydettiin kuvaamaan liikettä. Lähestyin tehtävää miettien, miten ihmiselle hyvin arkipäiväinen pieni liike näkyy kameran läpi katsottuna.',
+            en: 'Capturing motion. I approached this excersise thinking, how the little movement of our everyday life would look like through lence.',
+        },
+    },
+
+
+
+
     // {
     //     img: image4,
     //     title: {

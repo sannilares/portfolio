@@ -14,7 +14,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { withStyles } from '@material-ui/core/styles';
 import { Link, withRouter } from "react-router-dom";
-import { FormattedMessage } from 'react-intl';
+// import { FormattedMessage } from 'react-intl';
 
 
 
@@ -102,21 +102,21 @@ function Buttons(props) {
                 onClose={handleClose}
             >
                 {props.sections.map(section =>
-                    <MenuItem color="inherit" onClick={handleClose}>{section.name}</MenuItem>)
+                    <MenuItem color="inherit" onClick={handleClose} key={section.name}><NavLink url={section.url} active={section.url === pathname} component={section.name} /></MenuItem>)
                 }
             </StyledMenu>
         </div>
     );
 }
 
-function language() {
-    if (localStorage.getItem("language") === "en") {
-        localStorage.setItem("language", "fi")
-    } else {
-        localStorage.setItem("language", "en")
-    }
-    window.location.reload()
-};
+// function language() {
+//     if (localStorage.getItem("language") === "en") {
+//         localStorage.setItem("language", "fi")
+//     } else {
+//         localStorage.setItem("language", "en")
+//     }
+//     window.location.reload()
+// };
 
 function Navbar(props) {
     const { pathname } = props.location;

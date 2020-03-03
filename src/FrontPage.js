@@ -32,19 +32,20 @@ function Experience(props) {
             </div>
         );
     }
-
-    return (
-        <div>
-            <p className="titleSmall">{headline}</p>
-            <div className="experienceGridSmall">
-                <p className="workTitleSmall">{title}</p>
-                <p className="workTime" >{time}</p>
-                <p className="workCompanySmall">{company}</p>
-            </div >
-            <p>{description}</p>
-
-        </div>
-    );
+    // For smaller screens
+    else {
+        return (
+            <div className="smallScreen">
+                <p className="title">{headline}</p>
+                <div className="experienceGridSmall">
+                    <p className="workTitle">{title}</p>
+                    <p className="workTimeSmall" >{time}</p>
+                </div >
+                <p className="workCompany">{company}</p>
+                <p>{description}</p>
+            </div>
+        );
+    }
 
 
 }
@@ -57,22 +58,37 @@ function Skills(props) {
         gradeN,
     } = props
 
-    // const bigScreen = useMediaQuery(theme.breakpoints.up('md'));
+    const theme = useTheme();
+    const bigScreen = useMediaQuery(theme.breakpoints.up('md'));
 
-    // if (bigScreen) {
-    return (
-        <div>
-            <p className="title">{headline}</p>
-            <div className="skillGrid">
-                <p></p>
-                <p className="skillTitle">{skill}</p>
-                <div className="skillContainer">
-                    <div className={gradeN + " skill"}><p>{grade}</p></div>
-                </div>
+    if (bigScreen) {
+        return (
+            <div>
+                <p className="title">{headline}</p>
+                <div className="skillGrid">
+                    <p></p>
+                    <p className="skillTitle">{skill}</p>
+                    <div className="skillContainer">
+                        <div className={gradeN + " skill"}><p>{grade}</p></div>
+                    </div>
+                </div >
             </div >
-        </div >
-    );
-    //}
+        );
+    }
+    // For smaller screens
+    else {
+        return (
+            <div className="smallScreen">
+                <p className="title">{headline}</p>
+                <div className="skillGrid">
+                    <p className="skillTitle">{skill}</p>
+                    <div className="skillContainer">
+                        <div className={gradeN + " skill"}><p>{grade}</p></div>
+                    </div>
+                </div >
+            </div >
+        );
+    }
 }
 
 
@@ -110,33 +126,33 @@ function Introduction(props) {
                 <div className="introduction">
                     <p className="introTitle">{title}</p>
                     {paragraphs.map(text =>
-                        <p class="introText">{text}</p>)}
+                        <p className="introText">{text}</p>)}
                 </div>
             </div>
         );
     }
-
-    return (
-        <div className="introGridSmall">
-            <div>
-                <div className="meImg">
-                    <img alt="Sanni Lares" src={mina} />
+    // For smaller screens
+    else {
+        return (
+            <div className="introGridSmall">
+                <div className="contactSmall">
+                    <div>
+                        <img className="meImg" alt="Sanni Lares" src={mina} />
+                    </div>
+                    <div className="contactInfo">
+                        <p>{name}</p>
+                        <p>{phone}</p>
+                        <p>{email}</p>
+                    </div>
+                </div >
+                <div className="introduction">
+                    <p className="introTitle">{title}</p>
+                    {paragraphs.map(text =>
+                        <p>{text}</p>)}
                 </div>
-                <div className="contactInfo">
-                    <p>{name}</p>
-                    <p>{phone}</p>
-                    <p>{email}</p>
-                </div>
-            </div >
-            <div className="introduction">
-                <p className="introTitle">{title}</p>
-                {paragraphs.map(text =>
-                    <p>{text}</p>)}
             </div>
-        </div>
-    );
-
-
+        );
+    }
 }
 
 function ColorPortal() {
@@ -168,31 +184,35 @@ function FrontPage() {
                         `Olen avoin tiimityöskentelijä ja hyppään uusiin projekteihin mukaan täysillä. Vahvuuksiani ovat loogisuus ja huolellisuus, etsin luovia ratkaisuja ja uusia näkökulmia. Olen käynyt useita kursseja ryhmän ohjaamisesta ja -johtamisesta. `,
                         `Olen musikaalinen ja harrastan kiipeilyä ja tanssia. Nautin lukemisesta, lautapeleistä ja maalaamisesta. Rakastan luontoa, vaeltamista ja laskettelua.`,]} />
 
+                <div className="bgColor section">
+                    <Experience headline="Työkokemus" title="Assistentti" company="Aalto-yliopisto Junior" time="8/2019-" description="Opetan ja ohjaan työpajoja vieraileville opiskelijaryhmille tieteestä ja taiteesta. Osallistun työpajojen sekä Juniorin toiminnan kehittämiseen ja työstän Juniorin graafista ilmettä markkinoinnissa." />
+                    <Experience title="UI-harjoittelija" company="Siemens" time="5/2019-8/2019" description="Suunnittelin talonsisäisen sovelluksen käyttöliittymän ja osallistuin sen implementointiin. Suunnittelin ICT-puolen tuoteportfolion ja osallistuin MindSphere -IoT alustan kehittämiseen." />
+                    <Experience title="UI/UX-designer" company="Ultra Software" time="1/2019-12/2019" description="Projekteja, joissa suunnittelin UI/UX-designia eri nettisivuille." />
+                    <Experience title="Rippikouluohjaaja" company="Herttoniemen seurakunta" time="1/2017-1/2019" description="Toimin opettajana ja ohjaajana useilla eri rippikoululeireillä. Olin vastuussa valokuvauksesta sekä leirilehden toimittamisesta ja taitosta. Vastasin myös isostoiminnasta sekä osallistuin leirin sisältöjen ja opetuksen kehittämiseen." />
+                    <Experience title="Promoottori" company="Messukeskus" time="2/2016-3/2016" description="Kuvasin messuvieraita ja edistin eri messujen näkyvyyttä sosiaalisessa mediassa." />
+                </div>
 
-                <Experience headline="Työkokemus" title="Assistentti" company="Aalto-yliopisto Junior" time="8/2019-" description="Opetan ja ohjaan työpajoja vieraileville opiskelijaryhmille tieteestä ja taiteesta. Osallistun töpajojen sekä Juniorin toiminnan kehittämiseen ja työstän Juniorin graafista ilmettä markkinoinnissa." />
-                <Experience title="UI-harjoittelija" company="Siemens" time="5/2019-8/2019" description="Suunnittelin talonsisäisen sovelluksen käyttöliittymän ja osallistuin sen implementointiin. Suunnittelin ICT-puolen tuoteportfolion ja osallistuin MindSphere -IoT alustan kehittämiseen." />
-                <Experience title="UI/UX-designer" company="Ultra Software" time="1/2019-12/2019" description="Projekteja, joissa suunnittelin UI/UX-designia eri nettisivuille." />
-                <Experience title="Rippikouluohjaaja" company="Herttoniemen seurakunta" time="1/2017-1/2019" description="Toimin opettajana ja ohjaajana useilla eri rippikoululeireillä. Olin vastuussa valokuvauksesta sekä leirilehden toimittamisesta ja taitosta. Vastasin myös isostoiminnasta sekä osallistuin leirin sisältöjen ja opetuksen kehittämiseen." />
-                <Experience title="Promoottori" company="Messukeskus" time="2/2016-3/2016" description="Kuvasin messuvieraita ja edistin eri messujen näkyvyyttä sosiaalisessa mediassa." />
+                <div className="section">
+                    <Experience headline="Koulutus" title="Informaatioverkostot" company="Aalto-yliopisto" time="2017-" description="Informaatioverkostot opettavat ymmärtämään tieto- ja viestintätekniikan vaikutuksia ja mahdollisuuksia sekä suunnittelemaan uusia tuotteita ja palveluja. Opintopisteitä on kertynyt 162 keskiarvona 4. Sivuaineina tietotekniikka ja media." />
+                    <Experience title="Ylioppilas" company="Helsingin normaalilyseo" time="2013-2017" description="90 kurssia, keskiarvo 9.0. Ylioppilastutkinto: Matematiikka pitkä (E), äidinkieli (E), englanti (E), fysiikka (C), kemia (E) ja psykologia (E)." />
+                    <Experience title="Vaihtovuosi" company="Colac Secondary College" time="2015" description="Vaihtovuosi Australiassa." />
+                </div>
 
-                <Experience headline="Koulutus" title="Informaatioverkostot" company="Aalto-yliopisto" time="2017-" description="Informatioverkostot opettavat ymmärtämään tieto- ja viestintätekniikan vaikutuksia ja mahdollisuuksia sekä suunnittelemaan uusia tuotteita ja palveluja. Opintopisteitä on kertynyt 162 keskiarvona 4. Sivuaineina tietotekniikka ja media." />
-                <Experience title="Ylioppilas" company="Helsingin normaalilyseo" time="2013-2017" description="90 kurssia, keskiarvo 9.0. Ylioppilastutkinto: Matematiikka pitkä (E), äidinkieli (E), englanti (E), fysiikka (C), kemia (E) ja psykologia (E)." />
-                <Experience title="Vaihtovuosi" company="Colac Secondary College" time="2015" description="Vaihtovuosi Australiassa." />
+                <div className="bgColor section">
+                    <Skills headline="Taidot" skill="Certified Scrum Master" gradeN="noGrade" />
+                    <Skills skill="Adobe CC" gradeN="awe" />
+                    <Skills skill="Scala, Python, JS" gradeN="good" />
+                    <Skills skill="React, Angular" gradeN="ok" />
+                    <Skills skill="HTML, CSS" gradeN="good" />
+                    <Skills skill="Microsoft office" gradeN="awe" />
+                    <Skills skill="Figma, MarvelApp" gradeN="awe" />
+                </div>
 
-
-
-                <Skills headline="Taidot" skill="Certified Scrum Master" gradeN="noGrade" />
-                <Skills skill="Adobe CC" gradeN="awe" />
-                <Skills skill="Scala, Python, JS" gradeN="good" />
-                <Skills skill="React, Angular" gradeN="ok"/>
-                <Skills skill="HTML, CSS"  gradeN="good"/>
-                <Skills skill="Microsoft office" gradeN="awe" />
-                <Skills skill="Figma, MarvelApp" gradeN="awe"/>
-
-                <Experience headline="Vapaaehtoistyö" title="Koulun toiminta" company="Aalto-yliopisto & Helsingin normaalilyseo" time="2013-" description="Toimin hallituksen opiskelijaedustajana vuodesta 2018. Olen toiminut tutorina syksystä 2018 asti. 2019 kuuluin killan tietskarijengiin. Lukiossa olin oppilaskunnan hallituksessa ja koulun lehden Veikon päätoimittaja." />
-                <Experience title="Partio" company="Laajasalon siniset & 3rd/4th Colac Scout" time="2012-2016" description="Olen johtanut seikkailijoista koostuvaa ryhmää 2012-2014. 2015 hyväntekeväisyysmatka Fidjille, missä rakensimme päiväkodin ja leikkipuiston paikallisille, sekä suunnittelimme kyltin pienelle kylälle. Finnjamboreella 2016 toimin pakohuonepelin valvojana." />
-                <Experience title="Isonen & kerhonohjaaja" company="Herttoniemen seurakunta" time="2012-2015" description="Toimin isosena Lapin vaellusrippikoulussa kesinä 2013 ja 2014. Ohjasin 10-13 vuotiaiden kerhoa 2012-2014." />
-
+                <div className="section">
+                    <Experience headline="Vapaaehtoistyö" title="Koulun toiminta" company="Aalto-yliopisto & Helsingin normaalilyseo" time="2013-" description="Toimin hallituksen opiskelijaedustajana vuodesta 2018. Olen toiminut tutorina syksystä 2018 asti. 2019 kuuluin killan tietskarijengiin. Lukiossa olin oppilaskunnan hallituksessa ja koulun lehden Veikon päätoimittaja." />
+                    <Experience title="Partio" company="Laajasalon siniset & 3rd/4th Colac Scout" time="2012-2016" description="Olen johtanut seikkailijoista koostuvaa ryhmää 2012-2014. 2015 hyväntekeväisyysmatka Fidjille, missä rakensimme päiväkodin ja leikkipuiston paikallisille, sekä suunnittelimme kyltin pienelle kylälle. Finnjamboreella 2016 toimin pakohuonepelin valvojana." />
+                    <Experience title="Isonen & kerhonohjaaja" company="Herttoniemen seurakunta" time="2012-2015" description="Toimin isosena Lapin vaellusrippikoulussa kesinä 2013 ja 2014. Ohjasin 10-13 vuotiaiden kerhoa 2012-2014." />
+                </div>
             </div>
         </div>
     );

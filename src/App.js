@@ -16,20 +16,20 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: "#e0f7fa",
-      light: "#33c9dc",
-      dark: "#1769aa",
+      light: "#ffffff",
+      dark: "#adc3c6",
     },
     secondary: {
-      main: '#fff160',
-      light: "#ffff92",
-      dark: "#c8b000"
+      main: '#e0f2f1',
+      light: "#e6ffff",
+      dark: "#82b3c9"
     },
   },
 });
 
 
 function App() {
-  let sections = [{ "name": "Portfolio", "url": "/" }, { "name": "Tietoa", "url": "/tietoa" }]
+  let sections = [{ "name": "Portfolio", "url": "/" }, { "name": "CV", "url": "/cv" }]
 
 
   return (
@@ -41,7 +41,7 @@ function App() {
             <Navbar color="primary" name="Sanni Lares" sections={sections} />
 
             <Switch>
-              <Route path="/tietoa">
+              <Route path="/cv">
                 <FrontPage />
               </Route>
               <Route path="/">

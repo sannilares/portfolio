@@ -17,3 +17,11 @@
     padding-bottom: 30px;
 }
 
+.link, .link:visited {
+    color: cornsilk;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #C7DDDE;
+}

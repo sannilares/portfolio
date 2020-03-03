@@ -17,7 +17,7 @@ const marketingData = [
         cols: 1,
         desc: {
             fi: 'Suunnittelen Aalto-yliopisto Juniorille erilaista graafista sisältöä.',
-            en: ' design graphical content to Aalto University Junior, such as flyers. '
+            en: 'I design graphical content to Aalto University Junior, such as flyers. '
         },
     },
     // {
@@ -112,7 +112,7 @@ const marketingData = [
         },
         cols: 1,
         desc: {
-            fi: 'Tavoitteena oli kiinnittää ohikulkijan huomio ja saada mahdollisimman moni vierailemaan keirrätysaiheisella ständillä. Julisteet on tehty Canvalla.',
+            fi: 'Tavoitteena oli kiinnittää ohikulkijan huomio ja saada mahdollisimman moni vierailemaan kierrätysaiheisella ständillä. Julisteet on tehty Canvalla.',
             en: 'The goal for these posters was to make people to notice our stand and stop to have a better look. The posters are made by using Canva.'
         },
     },
@@ -125,8 +125,8 @@ const marketingData = [
         cols: 2,
         desc: {
             fi: 'Miten saada Radio City Hallin lipuista helpommin ymmärettäviä kuluttajalle? Lähestyin tehtävää kahden eri lipun kautta, pyrkien korostamaan konserttivieraalle oleellisimpia kohtia lipusta ja selkeyttämään lippujen visuaalista ilmettä.',
-            en: 'How to make Radio City Hall Concert tickets easier to understand? I approached this excercise by creating two tickets that hilighted the relevant information and livened up the visual appereance. '
-     },
+            en: 'How to make Radio City Hall Concert tickets easier to understand? I approached this exercise by creating two tickets that highlighted the relevant information and livened up the visual appearance.'
+        },
     }
 ];
 
