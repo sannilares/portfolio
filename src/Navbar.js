@@ -76,6 +76,7 @@ function Buttons(props) {
         />
     ));
 
+
     if (bigScreen) {
         return (
             <div className="navFlex">
@@ -85,11 +86,12 @@ function Buttons(props) {
                     )
                 })
                 }
+                <Button onClick={language}><FormattedMessage id="language" /> </Button>
             </div >
         );
     }
     return (
-        // Mobiilissa menu:
+        // Mobile menu:
         <div className="mobileFlex">
             <IconButton aria-label="Menu" aria-haspopup="true" onClick={handleClick}>
                 <MenuRoundedIcon />
@@ -102,8 +104,9 @@ function Buttons(props) {
                 onClose={handleClose}
             >
                 {props.sections.map(section =>
-                    <MenuItem color="inherit" onClick={handleClose} key={section.name}><NavLink url={section.url} active={section.url === pathname} component={section.name} /></MenuItem>)
+                    <NavLink url={section.url} active={section.url === pathname} component={<MenuItem color="inherit" onClick={handleClose} selected={section.url === pathname} key={section.name}>{section.name}</MenuItem>}></NavLink>)
                 }
+                <MenuItem color="inherit" onClick={language}><FormattedMessage id="language" /></MenuItem>
             </StyledMenu>
         </div>
     );
@@ -127,7 +130,6 @@ function Navbar(props) {
                     <Toolbar className="bar">
                         <Typography variant="h5" id="name">{props.name}</Typography>
                         <Buttons sections={props.sections} pathname={pathname} />
-                        <Button onClick={language}><FormattedMessage id="language" /> </Button>
                     </Toolbar>
                 </AppBar>
             </HideOnScroll>
