@@ -61,7 +61,7 @@
 }
 
 .awe {
-  width: 90%; 
+  width: 80%; 
 }
 
 .good {
@@ -140,6 +140,10 @@
   font-family: 'Raleway', sans-serif;
   color: rgb(254, 255, 179);
   text-align: right;
+}
+
+.workDesc {
+  padding-right: 36px;
 }
 
 .headline {

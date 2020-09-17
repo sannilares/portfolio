@@ -14,7 +14,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { withStyles } from '@material-ui/core/styles';
 import { Link, withRouter } from "react-router-dom";
-// import { FormattedMessage } from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 
 
 
@@ -109,14 +109,14 @@ function Buttons(props) {
     );
 }
 
-// function language() {
-//     if (localStorage.getItem("language") === "en") {
-//         localStorage.setItem("language", "fi")
-//     } else {
-//         localStorage.setItem("language", "en")
-//     }
-//     window.location.reload()
-// };
+function language() {
+    if (localStorage.getItem("language") === "en") {
+        localStorage.setItem("language", "fi")
+    } else {
+        localStorage.setItem("language", "en")
+    }
+    window.location.reload()
+};
 
 function Navbar(props) {
     const { pathname } = props.location;
@@ -127,7 +127,7 @@ function Navbar(props) {
                     <Toolbar className="bar">
                         <Typography variant="h5" id="name">{props.name}</Typography>
                         <Buttons sections={props.sections} pathname={pathname} />
-                        {/* <Button onClick={language}><FormattedMessage id="language" /> </Button> */}
+                        <Button onClick={language}><FormattedMessage id="language" /> </Button>
                     </Toolbar>
                 </AppBar>
             </HideOnScroll>

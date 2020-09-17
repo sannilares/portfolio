@@ -31,7 +31,7 @@ const tileData = [
         cols: 1,
         desc: {
             fi: 'Malli valmiina, tehtävänä kuvata muotikuva. Lähestyin tehtävää korostamalla nahkatakkia ja siihen osuvaa valoa.',
-            en: 'With given model, the excersise was to take an fashion image. I approached the task by highlithing the leatherjacket with an absend-minded feeling.',
+            en: 'With given model, the exercise was to take an fashion image. I approached the task by highligthing the leatherjacket with an absent-minded feeling.',
         },
     },
     {
