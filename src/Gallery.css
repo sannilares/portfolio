@@ -76,7 +76,7 @@
     }
 
     .gridList {
-        width: 700px;
+        width: 70%;
         height: 600px;
         overflow: hidden;
         overflow-y: hidden;
@@ -85,7 +85,6 @@
     .gallery {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
         overflow: hidden;
         padding: 40px;
     }

@@ -1,12 +1,8 @@
 .introGrid {
   display: grid;
   grid-template-columns: 40% auto;
-  grid-gap: 16px;
+  grid-gap: 36px;
   padding-top: 24px;
-}
-
-.introduction {
-  padding-left: 36px;
 }
 
 .experienceGrid {
@@ -28,7 +24,6 @@
 }
 
 .meImgContainer {
-  width: calc(100% - 64px);
   display: flex;
   justify-content: center;
 }
@@ -81,7 +76,6 @@
   font-size: 1.1rem;
   font-weight: 300;
   text-align: center;
-  margin-right: 64px;
 }
 
 .icon {
@@ -114,9 +108,10 @@
   font-size: 22px;
   font-family: 'Raleway', sans-serif;
   padding-left: 40%;
-  margin-left: 24px;
+  margin-left: 36px;
   color: rgb(22, 94, 97);
-  margin-top: 30px;
+  padding-top: 60px;
+  font-weight: bolder;
 }
 
 .workTitle { 
@@ -157,6 +152,7 @@
 .cvHeadline {
   padding-left: 2vw;
   padding-top: 2vh;
+  margin-left: 20px;
 }
 
 

@@ -12,33 +12,53 @@
     "aalto": "Aalto-yliopisto {br} Informaatioverkostot",
     "cv.who": "Kuka Sanni?",
     "cv.intro": "Olen UX-designerin ja palvelumuotoilijan sekoitus vahvalla tietoteknisellä pohjalla. Opiskelen Aalto-yliopistossa Informaatioverkostoja kolmatta vuotta, ja matkan varrella olen löytänyt sivuaineen niin tietotekniikasta kuin mediasta.{br}Aikanani aloitin opinnot infolla siksi, että olin kiinnostunut siitä sun tästä. Eikä mikään ole muuttunut. Kuitenkin erityisesti minua kiehtoo ihmisen käyttäytyminen ja sitä kautta UX-design. Haluan tehdä ihmisten elämästä helpompaa ja samalla oppia lisää siitä, miksi teemme asiat niin kuin teemme.{br}Olen avoin tiimityöskentelijä ja hyppään uusiin projekteihin mukaan täysillä. Vahvuuksiani ovat loogisuus ja huolellisuus, etsin luovia ratkaisuja ja uusia näkökulmia. Olen käynyt useita kursseja ryhmän ohjaamisesta ja -johtamisesta.{br}Olen musikaalinen ja harrastan kiipeilyä ja tanssia. Nautin lukemisesta, lautapeleistä ja maalaamisesta. Rakastan luontoa, vaeltamista ja laskettelua.",
+    
     "cv.workExperience": "Työkokemus",
+    
+    "cv.subrosaJob": "UI/UX-designer",
+    "cv.subrosa": "Subrosa Oy",
+    "cv.subrosaDesc": "Käyttöliittymäsuunnittelua, visuaalista suunnittelua, käyttökokemuksen optimointia, graafista suunnittelua, tuotteen vaatimusten määrittelyä, ideointia ja kehitystä. Tiimin ainoana suunnittelijana olen ottanut kopin niin visuaalisen ilmeen viimeistelystä kuin toiminnallisuuksien suunnittelusta ja vaatimuksista.",
+    
+    "cv.NAPCONJob": "Ohjelmistoinsinööri-harjoittelija",
+    "cv.NAPCON": "NAPCON, Neste",
+    "cv.NAPCONDesc": "Front-end ohjelmointia ja käyttöliittymäsuunnittelua scrum-tiimissä, sekä yhteistyötä markkinoinnin kanssa tehden nettisivuja, käytettävyysanalyysiä sekä kasvuhakkerointia (growth hacking). Kehityin niin ohjelmoijana, datan visualisoijana kuin tiimityöntekijänä erityisesti etätyössä.",
+    
     "cv.juniorJob": "Assistentti",
     "cv.junior": "Aalto-yliopisto Junior",
     "cv.juniorDesc": "Opetan ja ohjaan työpajoja vieraileville opiskelijaryhmille tieteestä ja taiteesta. Osallistun työpajojen sekä Juniorin toiminnan kehittämiseen ja työstän Juniorin graafista ilmettä markkinoinnissa.",
-    "cv.siemensJob": "UI-harjoittelija",
+    
+    "cv.siemensJob": "Harjoittelija",
     "cv.siemens": "Siemens",
     "cv.siemensDesc": "Suunnittelin talonsisäisen sovelluksen käyttöliittymän ja osallistuin sen implementointiin. Suunnittelin ICT-puolen tuoteportfolion ja osallistuin MindSphere -IoT alustan kehittämiseen.",
+    
     "cv.ultraJob": "UI/UX-designer",
     "cv.ultra": "Ultra Software",
-    "cv.ultraDesc": "Projekteja, joissa suunnittelin UI/UX-designia eri nettisivuille.",
+    "cv.ultraDesc": "Osallistuin eri projekteteihin käyttöliittymäsuunnittelijana.",
+
     "cv.churchJob": "Rippikouluohjaaja",
     "cv.church": "Herttoniemen seurakunta",
     "cv.churchDesc": "Toimin opettajana ja ohjaajana useilla eri rippikoululeireillä. Olin vastuussa valokuvauksesta sekä leirilehden toimittamisesta ja taitosta. Vastasin myös isostoiminnasta sekä osallistuin leirin sisältöjen ja opetuksen kehittämiseen.",
+    
     "cv.messuJob": "Promoottori",
     "cv.messu": "Messukeskus",
     "cv.messuDesc": "Kuvasin messuvieraita ja edistin eri messujen näkyvyyttä sosiaalisessa mediassa.",
+
     "cv.education": "Koulutus",
+    
     "cv.info": "Informaatioverkostot",
     "cv.aalto": "Aalto-yliopisto",
-    "cv.infoDesc": "Informaatioverkostot opettavat ymmärtämään tieto- ja viestintätekniikan vaikutuksia ja mahdollisuuksia sekä suunnittelemaan uusia tuotteita ja palveluja. Opintopisteitä on kertynyt 162 keskiarvona 4. Sivuaineina tietotekniikka ja media.",
+    "cv.infoDesc": "Informaatioverkostot opettavat ymmärtämään tieto- ja viestintätekniikan vaikutuksia ja mahdollisuuksia sekä suunnittelemaan uusia tuotteita ja palveluja. Valmistuin tekniikan kandidaatiksi keväällä 2020 erinomaisin taidoin. Opintosuuntaukseni on user, data & design.",
+    
     "cv.ylioppilas": "Ylioppilas",
     "cv.norssi": "Helsingin normaalilyseo",
     "cv.norssiDesc": "90 kurssia, keskiarvo 9.0. Ylioppilastutkinto: Matematiikka pitkä (E), äidinkieli (E), englanti (E), fysiikka (C), kemia (E) ja psykologia (E).",
+    
     "cv.vaihto": "Vaihtovuosi",
     "cv.csc": "Colac Secondary College",
     "cv.vaihtoDesc": "Vaihtovuosi Australiassa.",
+    
     "cv.skills": "Taidot",
+    
     "cv.vapaaehtois": "Vapaaehtoistyö",
     "cv.vSchoolJob": "Koulun toiminta",
     "cv.vSchool": "Aalto-yliopisto & Helsingin normaalilyseo",

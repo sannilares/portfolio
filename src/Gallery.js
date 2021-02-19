@@ -64,6 +64,30 @@ function Gallery({ intl }) {
         return (
             <div>
                 <ColorPortal />
+                {/* Webpages */}
+                <div className="headlineContainer">
+                    <div className="block">
+                        <p className="blockHeader"><FormattedMessage id="webPages" /></p>
+                    </div>
+                </div>
+                <div className="galleryContainer">
+                    <div className="gallery">
+                        <GridList style={gridContainerStyle} cellHeight={webCellHeight} className="gridList" cols={2}>
+                            {websiteData.map(tile => (
+                                <GridListTile component="div" className="gridImg" key={tile.img} cols={tile.cols || 1}>
+                                    <img onMouseOver={() => {
+                                        setHeadline(tile.title[lang])
+                                        setDescription(tile.desc[lang])
+                                    }} onClick={() => {
+                                        imgOpen(tile.img)
+                                        setLongDescription(tile.dialogDesc[lang])
+                                    }} src={tile.img} alt={tile.title} />
+                                </GridListTile>
+                            ))}
+                        </GridList>
+                    </div>
+                </div>
+
                 {/* Markkinointi */}
                 <div className="headlineContainer">
                     <div className="block">
@@ -92,30 +116,6 @@ function Gallery({ intl }) {
                             <Divider light={true} />
                             <p className="descText">{description}</p>
                         </div>
-                    </div>
-                </div>
-
-                {/* Webpages */}
-                <div className="headlineContainer">
-                    <div className="block">
-                        <p className="blockHeader"><FormattedMessage id="webPages" /></p>
-                    </div>
-                </div>
-                <div className="galleryContainer">
-                    <div className="gallery">
-                        <GridList style={gridContainerStyle} cellHeight={webCellHeight} className="gridList" cols={2}>
-                            {websiteData.map(tile => (
-                                <GridListTile component="div" className="gridImg" key={tile.img} cols={tile.cols || 1}>
-                                    <img onMouseOver={() => {
-                                        setHeadline(tile.title[lang])
-                                        setDescription(tile.desc[lang])
-                                    }} onClick={() => {
-                                        imgOpen(tile.img)
-                                        setLongDescription(tile.dialogDesc[lang])
-                                    }} src={tile.img} alt={tile.title} />
-                                </GridListTile>
-                            ))}
-                        </GridList>
                     </div>
                 </div>
 
