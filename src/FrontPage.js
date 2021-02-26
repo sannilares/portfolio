@@ -58,8 +58,6 @@ function Skills(props) {
     const {
         headline,
         skill,
-        grade,
-        gradeN,
         id,
     } = props
 
@@ -73,9 +71,6 @@ function Skills(props) {
                 <div className="skillGrid">
                     <p></p>
                     <p className="skillTitle">{skill}</p>
-                    <div className="skillContainer">
-                        <div className={gradeN + " skill"}><p>{grade}</p></div>
-                    </div>
                 </div >
             </div >
         );
@@ -87,9 +82,6 @@ function Skills(props) {
                 <p className="title">{headline}</p>
                 <div className="skillGrid">
                     <p className="skillTitle">{skill}</p>
-                    <div className="skillContainer">
-                        <div className={gradeN + " skill"}><p>{grade}</p></div>
-                    </div>
                 </div >
             </div >
         );
@@ -136,10 +128,12 @@ function Introduction(props) {
                 <div className="introduction">
                     <p className="introTitle">{title}</p>
                     <p className="introText">{paragraphs}</p>
-                    <Button onClick={() => navigateDownTo("cv.workExperience")}>{intl.formatMessage({ 'id': 'cv.workExperience' })}</Button>
-                    <Button onClick={() => navigateDownTo("cv.education")}>{intl.formatMessage({ 'id': 'cv.education' })}</Button>
-                    <Button onClick={() => navigateDownTo("cv.skills")}>{intl.formatMessage({ 'id': 'cv.skills' })}</Button>
-                    <Button onClick={() => navigateDownTo("cv.vapaaehtois")}>{intl.formatMessage({ 'id': 'cv.vapaaehtois' })}</Button>
+                    <div className="CVButtons">
+                        <Button onClick={() => navigateDownTo("cv.workExperience")}>{intl.formatMessage({ 'id': 'cv.workExperience' })}</Button>
+                        <Button onClick={() => navigateDownTo("cv.education")}>{intl.formatMessage({ 'id': 'cv.education' })}</Button>
+                        <Button onClick={() => navigateDownTo("cv.skills")}>{intl.formatMessage({ 'id': 'cv.skills' })}</Button>
+                        <Button onClick={() => navigateDownTo("cv.vapaaehtois")}>{intl.formatMessage({ 'id': 'cv.vapaaehtois' })}</Button>
+                    </div>
                 </div>
             </div>
         );
@@ -219,13 +213,9 @@ function FrontPage(props) {
 
                 {/* List of skills */}
                 <div className="bgColor section">
-                    <Skills id="cv.skills" headline={intl.formatMessage({ 'id': 'cv.skills' })} skill="Certified Scrum Master" gradeN="noGrade" />
-                    <Skills skill="Adobe CC" gradeN="awe" />
-                    <Skills skill="Scala, Python, JS" gradeN="good" />
-                    <Skills skill="React, Angular" gradeN="ok" />
-                    <Skills skill="HTML, CSS" gradeN="good" />
-                    <Skills skill="Microsoft office" gradeN="awe" />
-                    <Skills skill="Figma, MarvelApp" gradeN="awe" />
+                    <Skills id="cv.skills" headline={intl.formatMessage({ 'id': 'cv.skills' })} skill="Certified Scrum Master"/>
+                    <Skills skill="Adobe CC, Figma, Marvel App, Gravit designer, Microsoft Office, HTML, CSS, React, Angular, JS, Python, Scala, Sass, Google Analytics, Google Ads, MySQL" />
+                    <Skills skill={intl.formatMessage({ 'id': 'cv.skillList'})} />
                 </div>
 
                 {/* Voluntary work */}

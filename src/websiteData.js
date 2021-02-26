@@ -1,4 +1,4 @@
-import wsd from './assets/Nettisivut2.png';
+import vaestoliitto from './assets/Nettisivut7.png';
 import vjp from './assets/Nettisivut3.png';
 import roskApp from './assets/Nettisivut.png';
 import sarjanumero from './assets/Nettisivut4.png';
@@ -118,28 +118,45 @@ const websiteData = [
         }
     },
     {
-        img: wsd,
+        img: vaestoliitto,
         title: {
-            fi: 'The Gameservice',
-            en: 'The Gameservice'
+            fi: 'Väestöliiton blogi',
+            en: 'Väestöliitto blog'
         },
         cols: 1,
         desc: {
-            fi: 'Kurssilla Web Software Development luotu nettisivusto, jossa focus oli backendissä. Design ja mobiilioptimointi olivat kuitenkin pieni osa työtä, joten käytin hiukan aikaa sivun visuaaliseen ilmeeseen ja käytettävyyteen. Tehtävä oli opettavainen, sillä visuaaliseen ilmeeseen oli varattu suhteessa vähän aikaa, ja se rakennettiin täysin valmiin koodin päälle. ',
-            en: 'This webpage was created in a project course Web Software Development. The main focus in the project was in backend, but I decided to also spend a while to make a better design  and optimize the service to mobile. The exercise was very educational, since the design was built on top of existing code with a tight schedule.'
+            fi: "Tiiminä teimme growth hacking -projektin Väestöliiton blogille. Onnistuimme kasvattamaan blogin kävijämäärää ja matkalla opimme iteroimaan ja iteroimaan kunnes jokin toimi hyvin.",
+            en: 'As a team, we did a growth hacking project for the blog of Väestöliitto. We managed to grow the number of readers by iterating our ideas and solutions over and over again.'
         },
         dialogDesc: {
-            fi: `Projekti oli harjoitustyö, joka tehtiin kolmen hengen tiimeissä.  Projektissa oli tarkoitus oppia alusta loppuun, miten softaa tuotetaan. Taitotaso projektiryhmämme sisällä vaihteli paljon, joten projekti opetti paljon yhdessä toimimisesta, avun kysymisestä ja muiden huomioimisesta. Vaikka projekti painottui back-endiin, vastasin projektin UI:sta ja UX:stä. 
-
-            Projekti tehtiin todella tiukalla aikataululla ja käytettävyys oli erittäin vähäinen arvostelukriteeri, joten koko UX ja UI täytyi rakentaa valmiin softan päälle muutamassa päivässä. Tämän takia päädyinkin vain selkeyttämään ja yhtenäistämään sivuja mahdollisimman paljon. Lisäsin tilaa eri elementtien ympärille, käytin tehostevärinä sinistä kaikessa, mihin käyttäjä saattoi interaktiivisesti vaikuttaa ja tein taulukoista helposti luettavat. 
-            
-            Mobiiliin uhrasin myös muutaman hetken, lähinnä halusimme sivun järkeväksi mobiiliin, vaikkei kyseisiä pelejä puhelimella kuulukaan pelata. Saimme assistentilta loppupalautuksen yhteydessä positiivista palautetta UX:stä: "Erittäin hienoa jälkeä. Arvostan, että panostitte sivujen käytettävyyteen".
-            
-            UI:n ja UX:n suunnittelu toimivien nettisivujen päälle oli hauska tehtävä, ja erityisen opettavainen siksi, ettei aikaa ollut paljoa ja suunnitellessa sivuja piti olla varma, että saan ne myös koodattua kahdessa päivässä.
+            fi: `Tiiminä teimme growth hacking -projektin Väestöliiton blogille. Onnistuimme kasvattamaan blogin kävijämäärää ja matkalla opimme iteroimaan ja iteroimaan kunnes jokin toimi hyvin.
             `,
-            en: 'This webpage was created in a project course Web Software Development. The main focus in the project was in backend, but I decided to also spend a while to make a better design  and optimize the service to mobile. The exercise was very educational, since the design was built on top of existing code with a tight schedule.'
+            en: 'As a team, we did a growth hacking project for the blog of Väestöliitto. We managed to grow the number of readers by iterating our ideas and solutions over and over again.'
         }
     },
+    // {
+    //     img: wsd,
+    //     title: {
+    //         fi: 'The Gameservice',
+    //         en: 'The Gameservice'
+    //     },
+    //     cols: 1,
+    //     desc: {
+    //         fi: 'Kurssilla Web Software Development luotu nettisivusto, jossa focus oli backendissä. Design ja mobiilioptimointi olivat kuitenkin pieni osa työtä, joten käytin hiukan aikaa sivun visuaaliseen ilmeeseen ja käytettävyyteen. Tehtävä oli opettavainen, sillä visuaaliseen ilmeeseen oli varattu suhteessa vähän aikaa, ja se rakennettiin täysin valmiin koodin päälle. ',
+    //         en: 'This webpage was created in a project course Web Software Development. The main focus in the project was in backend, but I decided to also spend a while to make a better design  and optimize the service to mobile. The exercise was very educational, since the design was built on top of existing code with a tight schedule.'
+    //     },
+    //     dialogDesc: {
+    //         fi: `Projekti oli harjoitustyö, joka tehtiin kolmen hengen tiimeissä.  Projektissa oli tarkoitus oppia alusta loppuun, miten softaa tuotetaan. Taitotaso projektiryhmämme sisällä vaihteli paljon, joten projekti opetti paljon yhdessä toimimisesta, avun kysymisestä ja muiden huomioimisesta. Vaikka projekti painottui back-endiin, vastasin projektin UI:sta ja UX:stä. 
+
+    //         Projekti tehtiin todella tiukalla aikataululla ja käytettävyys oli erittäin vähäinen arvostelukriteeri, joten koko UX ja UI täytyi rakentaa valmiin softan päälle muutamassa päivässä. Tämän takia päädyinkin vain selkeyttämään ja yhtenäistämään sivuja mahdollisimman paljon. Lisäsin tilaa eri elementtien ympärille, käytin tehostevärinä sinistä kaikessa, mihin käyttäjä saattoi interaktiivisesti vaikuttaa ja tein taulukoista helposti luettavat. 
+            
+    //         Mobiiliin uhrasin myös muutaman hetken, lähinnä halusimme sivun järkeväksi mobiiliin, vaikkei kyseisiä pelejä puhelimella kuulukaan pelata. Saimme assistentilta loppupalautuksen yhteydessä positiivista palautetta UX:stä: "Erittäin hienoa jälkeä. Arvostan, että panostitte sivujen käytettävyyteen".
+            
+    //         UI:n ja UX:n suunnittelu toimivien nettisivujen päälle oli hauska tehtävä, ja erityisen opettavainen siksi, ettei aikaa ollut paljoa ja suunnitellessa sivuja piti olla varma, että saan ne myös koodattua kahdessa päivässä.
+    //         `,
+    //         en: 'This webpage was created in a project course Web Software Development. The main focus in the project was in backend, but I decided to also spend a while to make a better design  and optimize the service to mobile. The exercise was very educational, since the design was built on top of existing code with a tight schedule.'
+    //     }
+    // },
 ];
 
 export default websiteData;
