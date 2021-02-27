@@ -186,7 +186,7 @@ function Gallery({ intl }) {
                 </div>
                 <div className="galleryContainer">
                     <div className="gallery">
-                        <GridList style={gridContainerStyle} cellHeight={webCellHeight} className="gridList" cols={2}>
+                        <GridList style={gridContainerStyle} cellHeight={webCellHeight} className="gridListMobile" cols={2}>
                             {websiteData.map(tile => (
                                 <GridListTile component="div" className="gridImg" key={tile.img} cols={tile.cols || 1}>
                                     <img onMouseOver={() => {
@@ -208,7 +208,7 @@ function Gallery({ intl }) {
 
                 <div className="galleryContainer">
                     <div className="gallery">
-                        <GridList style={gridContainerStyle} cellHeight={cellHeight} className="gridList" cols={3}>
+                        <GridList style={gridContainerStyle} cellHeight={cellHeight} className="gridListMobile" cols={3}>
                             {tileData.map(tile => (
                                 <GridListTile component="div" className="gridImg" key={tile.img} cols={tile.cols || 1}>
                                     <img onMouseOver={() => {
@@ -229,7 +229,7 @@ function Gallery({ intl }) {
                 </div>
                 <div className="galleryContainer">
                     <div className="gallery">
-                        <GridList style={gridContainerStyle} cellHeight={cellHeight} className="gridList" cols={3}>
+                        <GridList style={gridContainerStyle} cellHeight={cellHeight} className="gridListMobile" cols={3}>
                             {marketingData.map(tile => (
                                 <GridListTile component="div" className="gridImg" key={tile.img} cols={tile.cols || 1}>
                                     <img onMouseOver={() => {

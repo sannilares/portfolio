@@ -82,6 +82,12 @@
         overflow-y: hidden;
     }
 
+    .gridListMobile {
+        height: 600px;
+        overflow: hidden;
+        overflow-y: hidden;
+    }
+
     .gallery {
         display: flex;
         flex-wrap: wrap;
