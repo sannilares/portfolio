@@ -178,26 +178,7 @@ function Gallery({ intl }) {
     else {
         return (
             <div>
-                <div className="headlineContainer">
-                    <div className="block">
-                        <p className="blockHeader bH2"><FormattedMessage id="marketing" /></p>
-                    </div>
-                </div>
-                <div className="galleryContainer">
-                    <div className="gallery">
-                        <GridList style={gridContainerStyle} cellHeight={cellHeight} className="gridList" cols={3}>
-                            {marketingData.map(tile => (
-                                <GridListTile component="div" className="gridImg" key={tile.img} cols={tile.cols || 1}>
-                                    <img onMouseOver={() => {
-                                        setHeadline(tile.title[lang])
-                                        setDescription(tile.desc[lang])
-                                    }} onClick={() => imgOpen(tile.img)} src={tile.img} alt={tile.title} />
-                                </GridListTile>
-                            ))}
-                        </GridList>
-                    </div>
-                </div>
-
+                {/* Web pages small screen */}
                 <div className="headlineContainer">
                     <div className="block">
                         <p className="blockHeader"><FormattedMessage id="webPages" /></p>
@@ -218,6 +199,7 @@ function Gallery({ intl }) {
                     </div>
                 </div>
 
+                {/* Photo and video small screen */}
                 <div className="headlineContainer">
                     <div className="block">
                         <p className="blockHeader"><FormattedMessage id="photoAndVideo" /></p>
@@ -233,6 +215,27 @@ function Gallery({ intl }) {
                                         setHeadline(tile.title[lang])
                                         setDescription(tile.desc[lang])
                                     }} onClick={() => imgOpen(tile.img, tile.video)} src={tile.img} alt={tile.title} />
+                                </GridListTile>
+                            ))}
+                        </GridList>
+                    </div>
+                </div>
+
+                {/* Marketing small screen */}
+                <div className="headlineContainer">
+                    <div className="block">
+                        <p className="blockHeader bH2"><FormattedMessage id="marketing" /></p>
+                    </div>
+                </div>
+                <div className="galleryContainer">
+                    <div className="gallery">
+                        <GridList style={gridContainerStyle} cellHeight={cellHeight} className="gridList" cols={3}>
+                            {marketingData.map(tile => (
+                                <GridListTile component="div" className="gridImg" key={tile.img} cols={tile.cols || 1}>
+                                    <img onMouseOver={() => {
+                                        setHeadline(tile.title[lang])
+                                        setDescription(tile.desc[lang])
+                                    }} onClick={() => imgOpen(tile.img)} src={tile.img} alt={tile.title} />
                                 </GridListTile>
                             ))}
                         </GridList>
