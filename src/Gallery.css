@@ -67,14 +67,6 @@
         padding: 20px;
     }
 
-    .gridImg { 
-        transition: 0.7s;
-    }
-
-    .gridImg:hover {
-        transform: scale(1.03);
-    }
-
     .gridList {
         width: 70%;
         height: 600px;

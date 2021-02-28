@@ -74,9 +74,9 @@ function Gallery({ intl }) {
                     <div className="gallery">
                         <GridList style={gridContainerStyle} cellHeight={webCellHeight} className="gridList" cols={2}>
                             {websiteData.map(tile => (
-                                <GridListTile component="div" className="gridImg" key={tile.img} cols={tile.cols || 1}>
-                                    <Tilt options={{ max: 20 }}>
-                                        <img style={{ width: "100%", padding: "20px" }} onMouseOver={() => {
+                                <GridListTile component="div" key={tile.img} cols={tile.cols || 1}>
+                                    <Tilt options={{ max: 20, scale : 1.03 }} style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
+                                        <img style={{ width: "93%" }} onMouseOver={() => {
                                             setHeadline(tile.title[lang])
                                             setDescription(tile.desc[lang])
                                         }} onClick={() => {
@@ -101,14 +101,16 @@ function Gallery({ intl }) {
                     <div className="gallery">
                         <GridList style={gridContainerStyle} cellHeight={cellHeight} className="gridList" cols={3}>
                             {marketingData.map(tile => (
-                                <GridListTile component="div" className="gridImg" key={tile.img} cols={tile.cols || 1}>
-                                    <img onMouseOver={() => {
-                                        setHeadline(tile.title[lang])
-                                        setDescription(tile.desc[lang])
-                                    }} onClick={() => {
-                                        imgOpen(tile.img)
-                                        setLongDescription(tile.desc[lang])
-                                    }} src={tile.img} alt={tile.title} />
+                                <GridListTile component="div" key={tile.img} cols={tile.cols || 1}>
+                                    <Tilt options={{ max: 20, scale : 1.03 }} style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
+                                        <img style={{ width: "93%" }} onMouseOver={() => {
+                                            setHeadline(tile.title[lang])
+                                            setDescription(tile.desc[lang])
+                                        }} onClick={() => {
+                                            imgOpen(tile.img)
+                                            setLongDescription(tile.desc[lang])
+                                        }} src={tile.img} alt={tile.title} />
+                                    </Tilt>
                                 </GridListTile>
                             ))}
                         </GridList>
@@ -132,14 +134,16 @@ function Gallery({ intl }) {
                     <div className="gallery">
                         <GridList style={gridContainerStyle} cellHeight={cellHeight} className="gridList" cols={3}>
                             {tileData.map(tile => (
-                                <GridListTile component="div" className="gridImg" key={tile.img} cols={tile.cols || 1}>
-                                    <img onMouseOver={() => {
-                                        setHeadline(tile.title[lang])
-                                        setDescription(tile.desc[lang])
-                                    }} onClick={() => {
-                                        imgOpen(tile.img, tile.video)
-                                        setLongDescription(tile.desc[lang])
-                                    }} src={tile.img} alt={tile.title} />
+                                <GridListTile component="div" key={tile.img} cols={tile.cols || 1}>
+                                    <Tilt options={{ max: 20, scale : 1.03 }} style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
+                                        <img style={{ width: "93%" }} onMouseOver={() => {
+                                            setHeadline(tile.title[lang])
+                                            setDescription(tile.desc[lang])
+                                        }} onClick={() => {
+                                            imgOpen(tile.img, tile.video)
+                                            setLongDescription(tile.desc[lang])
+                                        }} src={tile.img} alt={tile.title} />
+                                    </Tilt>
                                 </GridListTile>
                             ))}
                         </GridList>
