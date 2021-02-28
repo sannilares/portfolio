@@ -74,6 +74,17 @@
         overflow-y: hidden;
     }
 
+    .gridListTilt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+   .gridListTiltImg {
+       width: 100%;
+   }
+
     .gridListMobile {
         height: 600px;
         overflow: hidden;

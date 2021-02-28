@@ -1,8 +1,13 @@
 import vaestoliitto from './assets/Nettisivut7.png';
+import vaestoliitto2 from './assets/Väestöliitto2.png';
+import vaestoliitto3 from './assets/Väestöliitto3.png';
 import vjp from './assets/Nettisivut3.png';
 import roskApp from './assets/Nettisivut.png';
+import roskApp2 from './assets/RoskApp2.png';
 import sarjanumero from './assets/Nettisivut4.png';
 import portfolio from './assets/Nettisivut5.png';
+import portfolio2 from './assets/PortfolioTieto.png';
+import portfolio3 from './assets/PortfolioTieto2.png';
 import japan from './assets/Nettisivut6.png';
 
 const websiteData = [
@@ -32,11 +37,14 @@ const websiteData = [
         },
         carousel: [
             {
-                img: japan,
+                img: portfolio,
             },
             {
-                img: portfolio,
-            }    
+                img: portfolio2,
+            },
+            {
+                img: portfolio3,
+            }     
         ]
     },
     {
@@ -56,7 +64,15 @@ const websiteData = [
             Tuote ei ole vielä lopullinen, vaan appin tarkoituksenmukaisuutta ja käytettävyyttä testataan edelleen, ennen valmiin tuotteen ja projektin esittelyä.
             `,
             en: "We designed an application for a garbage scale, that's attached to the bottom of a garbage bin. The application is designed for mobile. "
-        }
+        },
+        carousel: [
+            {
+                img: roskApp,
+            },
+            {
+                img: roskApp2,
+            }    
+        ]
     },
     {
         img: japan,
@@ -140,8 +156,20 @@ const websiteData = [
             fi: `Tiiminä teimme growth hacking -projektin Väestöliiton blogille. Onnistuimme kasvattamaan blogin kävijämäärää ja matkalla opimme iteroimaan ja iteroimaan kunnes jokin toimi hyvin.
             `,
             en: 'As a team, we did a growth hacking project for the blog of Väestöliitto. We managed to grow the number of readers by iterating our ideas and solutions over and over again.'
-        }
+        },
+        carousel: [
+            {
+                img: vaestoliitto,
+            },
+            {
+                img: vaestoliitto2,
+            },
+            {
+                img: vaestoliitto3,
+            }        
+        ]
     },
+
     // {
     //     img: wsd,
     //     title: {

@@ -75,8 +75,8 @@ function Gallery({ intl }) {
                         <GridList style={gridContainerStyle} cellHeight={webCellHeight} className="gridList" cols={2}>
                             {websiteData.map(tile => (
                                 <GridListTile component="div" key={tile.img} cols={tile.cols || 1}>
-                                    <Tilt options={{ max: 20, scale : 1.03 }} style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                                        <img style={{ width: "93%" }} onMouseOver={() => {
+                                    <Tilt options={{ max: 20, scale : 1.03 }} className="gridListTilt">
+                                        <img className="gridListTiltImg" onMouseOver={() => {
                                             setHeadline(tile.title[lang])
                                             setDescription(tile.desc[lang])
                                         }} onClick={() => {
@@ -103,7 +103,7 @@ function Gallery({ intl }) {
                             {marketingData.map(tile => (
                                 <GridListTile component="div" key={tile.img} cols={tile.cols || 1}>
                                     <Tilt options={{ max: 20, scale : 1.03 }} style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                                        <img style={{ width: "93%" }} onMouseOver={() => {
+                                        <img className="gridListTiltImg" onMouseOver={() => {
                                             setHeadline(tile.title[lang])
                                             setDescription(tile.desc[lang])
                                         }} onClick={() => {
@@ -136,7 +136,7 @@ function Gallery({ intl }) {
                             {tileData.map(tile => (
                                 <GridListTile component="div" key={tile.img} cols={tile.cols || 1}>
                                     <Tilt options={{ max: 20, scale : 1.03 }} style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                                        <img style={{ width: "93%" }} onMouseOver={() => {
+                                        <img className="gridListTiltImg" onMouseOver={() => {
                                             setHeadline(tile.title[lang])
                                             setDescription(tile.desc[lang])
                                         }} onClick={() => {
