@@ -35,8 +35,6 @@ function ColorPortal() {
     return null
 }
 
-
-
 function Gallery({ intl }) {
     const bigScreen = useMediaQuery(useTheme().breakpoints.up('lg'));
     const [headline, setHeadline] = useState(intl.formatMessage({ 'id': 'cursorHeadline' }));
@@ -152,12 +150,14 @@ function Gallery({ intl }) {
                 >
                     <DialogTitle id="alert-dialog-title">{headline}</DialogTitle>
                     <DialogContent className="dialogFlex">
-                        {video ?
-                            <video className="video" controls>
-                                <source src={video} type="video/webm" />
-                            </video> :
-                            <img src={image} alt='' className="dialogImg" />
-                        }
+                        <div style={{ display: "flex", justifyContent: "center" }}>
+                            {video ?
+                                <video className="video" controls>
+                                    <source src={video} type="video/webm" />
+                                </video> :
+                                <img src={image} alt='' className="dialogImg" />
+                            }
+                        </div>
                         <DialogContentText className="imgChild" id="alert-dialog-description">
                             <div>
                                 {longDescription}
