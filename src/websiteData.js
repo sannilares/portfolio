@@ -29,7 +29,15 @@ const websiteData = [
             Auta toki sinäkin, ja kerro, jos jokin ei mielestäsi toimi! Olisihan se mahtavaa oppia lisää!
             `,
             en: "This portfolio is designed and coded by me. Due to some technical difficulties, I changed the design on the way, but I learned a lot because of it and in the end it turned out to be nicer UX than in the original design. ",
-        }
+        },
+        carousel: [
+            {
+                img: japan,
+            },
+            {
+                img: portfolio,
+            }    
+        ]
     },
     {
         img: roskApp,
