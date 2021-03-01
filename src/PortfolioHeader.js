@@ -1,8 +1,8 @@
 import React from 'react';
-import './Design.css';
+import './PortfolioHeader.css';
 import mina from './assets/minä.jpg';
 import linkedin from './assets/LI-In-Bug.png';
-import Gallery from './Gallery';
+import Portfolio from './Portfolio';
 import { FormattedMessage, injectIntl } from 'react-intl';
 
 function translateWithLineBreaks(intl, id) {
@@ -10,7 +10,7 @@ function translateWithLineBreaks(intl, id) {
 
 }
 
-function Design(props) {
+function PortfolioHeader(props) {
     const { intl } = props;
 
     return (
@@ -28,9 +28,9 @@ function Design(props) {
                     </div>
                 </div>
             </div>
-            <Gallery />
+            <Portfolio />
         </div >
     );
 }
 
-export default injectIntl(Design);
+export default injectIntl(PortfolioHeader);

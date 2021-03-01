@@ -1,14 +1,14 @@
-import vaestoliitto from './assets/Nettisivut7.png';
+import vaestoliitto from './assets/Väestöliitto.png';
 import vaestoliitto2 from './assets/Väestöliitto2.png';
 import vaestoliitto3 from './assets/Väestöliitto3.png';
-import vjp from './assets/Nettisivut3.png';
-import roskApp from './assets/Nettisivut.png';
+import vjp from './assets/Maalämpö.png';
+import roskApp from './assets/RoskApp.png';
 import roskApp2 from './assets/RoskApp2.png';
-import sarjanumero from './assets/Nettisivut4.png';
-import portfolio from './assets/Nettisivut5.png';
+import sarjanumero from './assets/Sarjanumero.png';
+import portfolio from './assets/Portfolio.png';
 import portfolio2 from './assets/PortfolioTieto.png';
 import portfolio3 from './assets/PortfolioTieto2.png';
-import japan from './assets/Nettisivut6.png';
+import japan from './assets/Japan.png';
 
 const websiteData = [
     {

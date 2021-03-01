@@ -4,7 +4,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import tileData from './tileData';
 import marketingData from './marketingData';
 import websiteData from './websiteData';
-import './Gallery.css';
+import './Portfolio.css';
 import { Divider } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import ReactDOM from 'react-dom';
@@ -36,7 +36,7 @@ function ColorPortal() {
     return null
 }
 
-function Gallery({ intl }) {
+function Portfolio({ intl }) {
     const bigScreen = useMediaQuery(useTheme().breakpoints.up('lg'));
     const [headline, setHeadline] = useState(intl.formatMessage({ 'id': 'cursorHeadline' }));
     const [description, setDescription] = useState(intl.formatMessage({ 'id': 'cursor' }));
@@ -64,6 +64,7 @@ function Gallery({ intl }) {
         return (
             <div>
                 <ColorPortal />
+
                 {/* Webpages */}
                 <div className="headlineContainer">
                     <div className="block">
@@ -102,7 +103,7 @@ function Gallery({ intl }) {
                         <GridList style={gridContainerStyle} cellHeight={cellHeight} className="gridList" cols={3}>
                             {marketingData.map(tile => (
                                 <GridListTile component="div" key={tile.img} cols={tile.cols || 1}>
-                                    <Tilt options={{ max: 20, scale : 1.03 }} style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
+                                    <Tilt options={{ max: 20, scale : 1.03 }} className="gridListTilt">
                                         <img className="gridListTiltImg" onMouseOver={() => {
                                             setHeadline(tile.title[lang])
                                             setDescription(tile.desc[lang])
@@ -136,7 +137,7 @@ function Gallery({ intl }) {
                         <GridList style={gridContainerStyle} cellHeight={cellHeight} className="gridList" cols={3}>
                             {tileData.map(tile => (
                                 <GridListTile component="div" key={tile.img} cols={tile.cols || 1}>
-                                    <Tilt options={{ max: 20, scale : 1.03 }} style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
+                                    <Tilt options={{ max: 20, scale : 1.03 }} className="gridListTilt">
                                         <img className="gridListTiltImg" onMouseOver={() => {
                                             setHeadline(tile.title[lang])
                                             setDescription(tile.desc[lang])
@@ -294,4 +295,4 @@ function Gallery({ intl }) {
     }
 }
 
-export default injectIntl(Gallery);
+export default injectIntl(Portfolio);

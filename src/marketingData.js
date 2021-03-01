@@ -1,10 +1,10 @@
-import japani from './assets/Portfolio3.png';
-import japani2 from './assets/Portfolio4.png';
-import junior from './assets/Portfolio2.png';
-import veikko from './assets/Portfolio.png';
-import tickets from './assets/Portfolio5.png';
-import recycle1 from './assets/Portfolio6.png';
-import recycle2 from './assets/Portfolio7.png';
+import japani from './assets/JapaniPoster.png';
+import japani2 from './assets/JapaniFlyer.png';
+import junior from './assets/Luma.png';
+import veikko from './assets/Veikot.png';
+import tickets from './assets/Tickets.png';
+import recycle1 from './assets/RecyclePoster.png';
+import recycle2 from './assets/RecycleInfo.png';
 
 
 const marketingData = [

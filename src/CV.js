@@ -3,7 +3,7 @@ import { useTheme } from '@material-ui/core/styles';
 import mina from './assets/sanni.jpg';
 import phoneImg from './assets/call-24px.svg';
 import emailImg from './assets/mail_outline-24px.svg';
-import './FrontPage.css';
+import './CV.css';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import ReactDOM from 'react-dom';
 import Button from '@material-ui/core/Button';
@@ -177,7 +177,7 @@ function translateWithLineBreaks(intl, id) {
     return intl.formatMessage({ 'id': id }, { br: <> <br /> <br /> </> })
 
 }
-function FrontPage(props) {
+function CV(props) {
     const { intl } = props;
     return (
         <div>
@@ -229,5 +229,5 @@ function FrontPage(props) {
     );
 }
 
-export default injectIntl(FrontPage);
+export default injectIntl(CV);
 

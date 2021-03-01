@@ -3,8 +3,8 @@ import './App.css';
 import Navbar from './Navbar.js'
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import FrontPage from './FrontPage.js';
-import Design from './Design.js';
+import CV from './CV.js';
+import PortfolioHeader from './PortfolioHeader.js';
 import Footer from './Footer.js';
 import {
   BrowserRouter as Router,
@@ -42,10 +42,10 @@ function App() {
 
             <Switch>
               <Route path="/cv">
-                <FrontPage />
+                <CV />
               </Route>
               <Route path="/">
-                <Design />
+                <PortfolioHeader />
               </Route>
             </Switch>
 
