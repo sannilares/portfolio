@@ -204,6 +204,13 @@ function CV(props) {
                     {/* <Experience title={intl.formatMessage({ 'id': 'cv.messuJob' })} company={intl.formatMessage({ 'id': 'cv.messu' })} time="2/2016-3/2016" description={intl.formatMessage({ 'id': 'cv.messuDesc' })} /> */}
                 </div>
 
+                 {/* List of skills */}
+                 <div className="bgColor section">
+                    <Skills id="cv.skills" headline={intl.formatMessage({ 'id': 'cv.skills' })} skill="Certified Scrum Master"/>
+                    <Skills skill="Adobe CC, Figma, Marvel App, Gravit designer, Microsoft Office, HTML, CSS, React, Angular, JS, Python, Scala, Sass, Google Analytics, Google Ads, MySQL" />
+                    <Skills skill={intl.formatMessage({ 'id': 'cv.skillList'})} />
+                </div>
+
                 {/* Education */}
                 <div className="section">
                     <Experience id="cv.education" headline={intl.formatMessage({ 'id': 'cv.education' })} title={intl.formatMessage({ 'id': 'cv.info' })} company={intl.formatMessage({ 'id': 'cv.aalto' })} time="2017-" description={intl.formatMessage({ 'id': 'cv.infoDesc' })} />
@@ -211,13 +218,7 @@ function CV(props) {
                     <Experience title={intl.formatMessage({ 'id': 'cv.vaihto' })} company={intl.formatMessage({ 'id': 'cv.csc' })} time="2015" description={intl.formatMessage({ 'id': 'cv.vaihtoDesc' })} />
                 </div>
 
-                {/* List of skills */}
-                <div className="bgColor section">
-                    <Skills id="cv.skills" headline={intl.formatMessage({ 'id': 'cv.skills' })} skill="Certified Scrum Master"/>
-                    <Skills skill="Adobe CC, Figma, Marvel App, Gravit designer, Microsoft Office, HTML, CSS, React, Angular, JS, Python, Scala, Sass, Google Analytics, Google Ads, MySQL" />
-                    <Skills skill={intl.formatMessage({ 'id': 'cv.skillList'})} />
-                </div>
-
+               
                 {/* Voluntary work */}
                 <div className="section">
                     <Experience id="cv.vapaaehtois" headline={intl.formatMessage({ 'id': 'cv.vapaaehtois' })} title={intl.formatMessage({ 'id': 'cv.vSchoolJob' })} company={intl.formatMessage({ 'id': 'cv.vSchool' })} time="2013-" description={intl.formatMessage({ 'id': 'cv.vSchoolDesc' })} />

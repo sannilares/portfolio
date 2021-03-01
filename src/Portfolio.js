@@ -76,7 +76,7 @@ function Portfolio({ intl }) {
                         <GridList style={gridContainerStyle} cellHeight={webCellHeight} className="gridList" cols={2}>
                             {websiteData.map(tile => (
                                 <GridListTile component="div" key={tile.img} cols={tile.cols || 1}>
-                                    <Tilt options={{ max: 20, scale : 1.03 }} className="gridListTilt">
+                                    <Tilt options={{ max: 10, scale : 1.03 }} className="gridListTilt">
                                         <img className="gridListTiltImg" onMouseOver={() => {
                                             setHeadline(tile.title[lang])
                                             setDescription(tile.desc[lang])
@@ -103,7 +103,7 @@ function Portfolio({ intl }) {
                         <GridList style={gridContainerStyle} cellHeight={cellHeight} className="gridList" cols={3}>
                             {marketingData.map(tile => (
                                 <GridListTile component="div" key={tile.img} cols={tile.cols || 1}>
-                                    <Tilt options={{ max: 20, scale : 1.03 }} className="gridListTilt">
+                                    <Tilt options={{ max: 10, scale : 1.03 }} className="gridListTilt">
                                         <img className="gridListTiltImg" onMouseOver={() => {
                                             setHeadline(tile.title[lang])
                                             setDescription(tile.desc[lang])
@@ -137,7 +137,7 @@ function Portfolio({ intl }) {
                         <GridList style={gridContainerStyle} cellHeight={cellHeight} className="gridList" cols={3}>
                             {tileData.map(tile => (
                                 <GridListTile component="div" key={tile.img} cols={tile.cols || 1}>
-                                    <Tilt options={{ max: 20, scale : 1.03 }} className="gridListTilt">
+                                    <Tilt options={{ max: 10, scale : 1.03 }} className="gridListTilt">
                                         <img className="gridListTiltImg" onMouseOver={() => {
                                             setHeadline(tile.title[lang])
                                             setDescription(tile.desc[lang])
