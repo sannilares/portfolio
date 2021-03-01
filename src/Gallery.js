@@ -109,6 +109,7 @@ function Gallery({ intl }) {
                                         }} onClick={() => {
                                             imgOpen(tile.img)
                                             setLongDescription(tile.desc[lang])
+                                            setCarousel(tile.carousel)
                                         }} src={tile.img} alt={tile.title} />
                                     </Tilt>
                                 </GridListTile>
@@ -142,6 +143,7 @@ function Gallery({ intl }) {
                                         }} onClick={() => {
                                             imgOpen(tile.img, tile.video)
                                             setLongDescription(tile.desc[lang])
+                                            setCarousel(tile.carousel)
                                         }} src={tile.img} alt={tile.title} />
                                     </Tilt>
                                 </GridListTile>
