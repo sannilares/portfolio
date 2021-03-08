@@ -1,165 +1,166 @@
 /* Headlines */
-    .headlineContainer {
-        margin: 20px;
-        display: block;
-    }
-    
-    .block {
-        display: inline-block;
-        height: 76px;
-        background-color: rgba(75, 145, 148, 0.815);
-        width: 147px;
-    }
+.headlineContainer {
+  margin: 20px;
+  display: block;
+}
 
-    .blockHeader {
-        display: inline-block;
-        position: absolute;
-        left: 116px;
-        color: black;
-        text-transform: uppercase;
-        font-size: 50px;
-        letter-spacing: 0px;
-        margin: 0;
-        align-self: start;
-        width: 60%;
-        font-family: 'Raleway', sans-serif;
-        margin-top: 7px;
-    }
+.block {
+  display: inline-block;
+  height: 76px;
+  background-color: rgba(75, 145, 148, 0.815);
+  width: 147px;
+}
 
-    .bH2 {
-        position: absolute;
-        left: 106px;
-    }
+.blockHeader {
+  display: inline-block;
+  position: absolute;
+  left: 116px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 0px;
+  margin: 0;
+  align-self: start;
+  width: 60%;
+  font-family: "Raleway", sans-serif;
+  margin-top: 7px;
+}
 
-    /* Gallery itself */
-    .galleryContainer {
-        display: flex;
-        justify-content: space-between;
-        margin: 20px;
-    }
+.bH2 {
+  position: absolute;
+  left: 106px;
+}
 
-    .description {
-        padding: 5%;
-        padding-top: 10vh;
-        width: 20%;
-        justify-self: center;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        top: 100vh;
+/* Gallery itself */
+.galleryContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
 
-    }
+.description {
+  padding: 5%;
+  padding-top: 10vh;
+  width: 20%;
+  justify-self: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 100vh;
+}
 
-    .descHeadline {
-        margin: 0;
-        font-weight: 400;
-        font-size: 26px;
-        position: sticky;
-        top: 80px;
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-    }
+.descHeadline {
+  margin: 0;
+  font-weight: 400;
+  font-size: 26px;
+  position: sticky;
+  top: 80px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
 
-    .descText {
-        font-size: 18px;
-        color: black;
-        text-transform: none;
-        padding: 20px;
-    }
+.descText {
+  font-size: 18px;
+  color: black;
+  text-transform: none;
+  padding: 20px;
+  white-space: break-spaces;
+}
 
-    .gridList {
-        width: 70%;
-        height: 600px;
-        overflow: hidden;
-        overflow-y: hidden;
-    }
+.gridListTile {
+  justify-self: center;
+}
 
-    .gridListTilt {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
+.gridListTilt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
-   .gridListTiltImg {
-       width: 97%;
-   }
+.gridListTiltImg {
+  width: 97%;
+}
 
-    .gridListMobile {
-        height: 600px;
-        overflow: hidden;
-        overflow-y: hidden;
-    }
+.galleryBigScreen {
+  width: 70%;
+  height: 600px;
+  overflow: hidden;
+  overflow-y: hidden;
+}
 
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        overflow: hidden;
-        padding: 40px;
-    }
+.gallerySmallScreen {
+  height: 50%;
+  overflow: hidden;
+  overflow-y: hidden;
+}
 
-    /* Dialog */
-    .dialogImg {
-        max-width: 60%;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 40px;
+}
 
-    }
+/* Dialog */
+.dialogImg {
+  max-width: 60%;
+}
 
-    .dialogFlex {
-        display: inline-block;
-        
-    }
+.dialogFlex {
+  display: inline-block;
+}
 
-    .imgChild {
-        display: flex;
-    }
+.imgChild {
+  display: flex;
+}
 
-    .imgChild div {
-        flex-grow: 1;
-        width: 0;
-      }
+.imgChild div {
+  flex-grow: 1;
+  width: 0;
+}
 
-    .video {
-        max-width: 100%;
-    }
+.video {
+  max-width: 100%;
+}
 
-    /* Background color */
-    .rightBg {
-        background-color: rgba(95, 158, 160, 0.349);
-        width: 30%;
-        height: 100%;
-        z-index: -1;
-        position: absolute;
-        right: 0;
+/* Background color */
+.rightBg {
+  background-color: rgba(95, 158, 160, 0.349);
+  width: 30%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  right: 0;
 }
 
 /* Mobile */
 @media (max-width: 960px) {
-    .block {
-        display: inline-block;
-        height: 46px;
-        background-color: rgba(75, 145, 148, 0.815);
-        width: 127px;
-    }
+  .block {
+    display: inline-block;
+    height: 46px;
+    background-color: rgba(75, 145, 148, 0.815);
+    width: 127px;
+  }
 
-    .blockHeader {
-        font-size: 30px;
-    }
+  .blockHeader {
+    font-size: 30px;
+  }
 
-    .bH2 {
-        position: absolute;
-        left: 110px;
-    }
+  .bH2 {
+    position: absolute;
+    left: 110px;
+  }
 
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        overflow: hidden;
-        padding: 40px;
-    }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 40px;
+  }
 
-    .gallery {
-        padding: 10px;
-    }
+  .gallery {
+    padding: 10px;
+  }
 }
-
