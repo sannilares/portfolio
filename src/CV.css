@@ -16,12 +16,6 @@
   padding-right: 40px;
 }
 
-.skillGrid {
-  display: grid;
-  grid-template-columns: 40% auto;
-  grid-gap: 36px;
-}
-
 .meImgContainer {
   display: flex;
   justify-content: center;
@@ -34,6 +28,12 @@
 }
 
 /* Skills */
+.skillGrid {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-gap: 36px;
+}
+
 .skill {
   background-color: rgb(33, 131, 138);
   padding-top: 1px;
@@ -42,7 +42,6 @@
   color: white;
   text-align: end;
   padding-right: 16px;
-  font-family: 'Raleway', sans-serif;
 }
 
 /* Contact information */
@@ -211,11 +210,7 @@
         }
 
         .skillGrid {
-          display: grid;
-          grid-template-columns: 35% auto;
-          grid-gap: 36px;
-          grid-template-rows: 1ch auto;
-          margin-bottom: 26px;
+          grid-template-columns: 100%;
         }
 
         .workTitle {

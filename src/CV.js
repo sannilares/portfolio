@@ -76,7 +76,7 @@ function Skills(props) {
         {headline && <p className="title" id={id}>{headline}</p>}
         <div className="skillGrid">
           <p />
-          <p className="skillTitle">{skill}</p>
+          <p className="workDesc">{skill}</p>
         </div>
       </div>
     );
@@ -87,7 +87,7 @@ function Skills(props) {
     <div className="smallScreen">
       <p className="title">{headline}</p>
       <div className="skillGrid">
-        <p className="skillTitle">{skill}</p>
+        <p className="workDesc">{skill}</p>
       </div>
     </div>
   );
