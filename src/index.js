@@ -1,24 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { IntlProvider } from 'react-intl';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import fi from './languages/fi.json';
 import en from './languages/en.json';
-import { IntlProvider } from 'react-intl';
+
 
 const translations = {
-    "fi": fi,
-    "en": en
-}
+  fi,
+  en,
+};
 
-const lang = localStorage.getItem("language") || "fi"
+const lang = localStorage.getItem('language') || 'fi';
 
 ReactDOM.render(
-    <IntlProvider messages={translations[lang]}>
-        <App />
-    </IntlProvider>,
-    document.getElementById('root')
+  <IntlProvider messages={translations[lang]}>
+    <App />
+  </IntlProvider>,
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change

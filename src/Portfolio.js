@@ -24,10 +24,6 @@ import Gallery from './Gallery';
 
 // Jos haetaan ulkopuolista dataa, on kieli määriteltävä erikseen fallbackeineen
 const lang = localStorage.getItem('language') || 'fi';
-const gridContainerStyle = {
-  height: 'auto',
-  overflow: 'hidden',
-};
 function ColorPortal() {
   const bigScreen = useMediaQuery(useTheme().breakpoints.up('lg'));
   const colorContainer = document.getElementById('colorContainer');

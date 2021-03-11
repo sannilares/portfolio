@@ -1,14 +1,14 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { useTheme } from '@material-ui/core/styles';
-import mina from './assets/sanni.jpg';
-import phoneImg from './assets/call-24px.svg';
-import emailImg from './assets/mail_outline-24px.svg';
 import './CV.css';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import ReactDOM from 'react-dom';
 import Button from '@material-ui/core/Button';
-
-import { FormattedMessage, injectIntl } from 'react-intl';
+import { injectIntl } from 'react-intl';
+import mina from './assets/sanni.jpg';
+import phoneImg from './assets/call-24px.svg';
+import emailImg from './assets/mail_outline-24px.svg';
 
 function Experience(props) {
   const {
@@ -36,8 +36,8 @@ function Experience(props) {
       </div>
     );
   }
-  // For smaller screens
 
+  // For smaller screens
   return (
     <div className="smallScreen">
       <p className="title">{headline}</p>
@@ -50,6 +50,15 @@ function Experience(props) {
     </div>
   );
 }
+
+Experience.propTypes = {
+  company: PropTypes.string,
+  description: PropTypes.string,
+  headline: PropTypes.string,
+  id: PropTypes.string,
+  time: PropTypes.string,
+  title: PropTypes.string,
+};
 
 function Skills(props) {
   const {
@@ -72,8 +81,8 @@ function Skills(props) {
       </div>
     );
   }
-  // For smaller screens
 
+  // For smaller screens
   return (
     <div className="smallScreen">
       <p className="title">{headline}</p>
@@ -83,6 +92,12 @@ function Skills(props) {
     </div>
   );
 }
+
+Skills.propTypes = {
+  headline: PropTypes.string,
+  id: PropTypes.string,
+  skill: PropTypes.string,
+};
 
 function navigateDownTo(location) {
   const navigateHere = document.getElementById(location);
@@ -166,6 +181,17 @@ function Introduction(props) {
   );
 }
 
+Introduction.propTypes = {
+  email: PropTypes.string,
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func,
+  }),
+  name: PropTypes.string,
+  paragraphs: PropTypes.object,
+  phone: PropTypes.string,
+  title: PropTypes.string,
+};
+
 function ColorPortal() {
   const bigScreen = useMediaQuery(useTheme().breakpoints.up('md'));
   const colorContainer = document.getElementById('colorContainer');
@@ -185,7 +211,7 @@ function translateWithLineBreaks(intl, id) {
       {' '}
       <br />
       {' '}
-        </>,
+    </>,
   });
 }
 function CV(props) {
@@ -215,14 +241,14 @@ function CV(props) {
         </div>
 
         {/* List of skills */}
-        <div className="bgColor section">
+        <div className="section">
           <Skills id="cv.skills" headline={intl.formatMessage({ id: 'cv.skills' })} skill="Certified Scrum Master" />
           <Skills skill="Adobe CC, Figma, Marvel App, Gravit designer, Microsoft Office, HTML, CSS, React, Angular, JS, Python, Scala, Sass, Google Analytics, Google Ads, MySQL" />
           <Skills skill={intl.formatMessage({ id: 'cv.skillList' })} />
         </div>
 
         {/* Education */}
-        <div className="section">
+        <div className="bgColor section">
           <Experience id="cv.education" headline={intl.formatMessage({ id: 'cv.education' })} title={intl.formatMessage({ id: 'cv.info' })} company={intl.formatMessage({ id: 'cv.aalto' })} time="2017-" description={intl.formatMessage({ id: 'cv.infoDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.ylioppilas' })} company={intl.formatMessage({ id: 'cv.norssi' })} time="2013-2017" description={intl.formatMessage({ id: 'cv.norssiDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.vaihto' })} company={intl.formatMessage({ id: 'cv.csc' })} time="2015" description={intl.formatMessage({ id: 'cv.vaihtoDesc' })} />

@@ -62,7 +62,7 @@ function Gallery(props) {
 Gallery.propTypes = {
   columns: PropTypes.number,
   data: PropTypes.array,
-  headline: PropTypes.string,
+  headline: PropTypes.object,
   lang: PropTypes.string,
   setTileData: PropTypes.func,
   setOpen: PropTypes.func,
