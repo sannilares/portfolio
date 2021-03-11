@@ -98,7 +98,7 @@ function Portfolio({ intl }) {
             <div className="descHeadline">
               <h2>{headline}</h2>
               <Divider light />
-              <p className="descText">{ get(tileData, `desc.${lang}`)}</p>
+              <p className="descText">{ get(tileData, `desc.${lang}`).split('\n')[0] }</p>
             </div>
           </div>
         </>
