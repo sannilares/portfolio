@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import {
   BrowserRouter as Router,
@@ -12,7 +12,7 @@ import CV from './CV';
 import PortfolioHeader from './PortfolioHeader';
 import Footer from './Footer';
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: '#e0f7fa',

@@ -1,7 +1,3 @@
-/* eslint-disable jsx-a11y/mouse-events-have-key-events */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/media-has-caption */
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import './Portfolio.css';
@@ -45,7 +41,7 @@ function DialogMedia(props) {
   if (carousel) {
     return (
       <Carousel autoPlay={false}>
-        {carousel.map((item) => <img src={item.img} alt="" style={{ width: '100%' }} />)}
+        {carousel.map((item, i) => <img key={i} src={item.img} alt="" style={{ width: '100%' }} />)}
       </Carousel>
     );
   }
@@ -98,7 +94,7 @@ function Portfolio({ intl }) {
             <div className="descHeadline">
               <h2>{headline}</h2>
               <Divider light />
-              <p className="descText">{ get(tileData, `desc.${lang}`).split('\n')[0] }</p>
+              <p className="descText">{get(tileData, `desc.${lang}`).split('\n')[0]}</p>
             </div>
           </div>
         </>
@@ -162,7 +158,7 @@ function Portfolio({ intl }) {
           {!tileData.carousel && (
             <DialogContentText className="imgChild" id="alert-dialog-description">
               <div style={{ whiteSpace: 'break-spaces' }}>
-                { get(tileData, `desc.${lang}`)}
+                {get(tileData, `desc.${lang}`)}
               </div>
             </DialogContentText>
           )}
