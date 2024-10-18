@@ -63,6 +63,7 @@ Experience.propTypes = {
 function Skills(props) {
   const {
     headline,
+    type,
     skill,
     id,
   } = props;
@@ -75,7 +76,7 @@ function Skills(props) {
       <div>
         {headline && <p className="title" id={id}>{headline}</p>}
         <div className="skillGrid">
-          <p />
+          <p className="workTitle">{type}</p>
           <p className="workDesc">{skill}</p>
         </div>
       </div>
@@ -86,8 +87,9 @@ function Skills(props) {
   return (
     <div className="smallScreen">
       <p className="title">{headline}</p>
-      <div className="skillGrid">
-        <p className="workDesc">{skill}</p>
+      <div>
+        <p className="workTitle">{type}</p>
+        <p>{skill}</p>
       </div>
     </div>
   );
@@ -95,6 +97,7 @@ function Skills(props) {
 
 Skills.propTypes = {
   headline: PropTypes.string,
+  type: PropTypes.string,
   id: PropTypes.string,
   skill: PropTypes.string,
 };
@@ -242,14 +245,15 @@ function CV(props) {
 
         {/* List of skills */}
         <div className="section">
-          <Skills id="cv.skills" headline={intl.formatMessage({ id: 'cv.skills' })} skill="Certified Scrum Master" />
-          <Skills skill="Adobe CC, Figma, Marvel App, Gravit designer, Microsoft Office, HTML, CSS, React, Angular, JS, Python, Scala, Sass, Google Analytics, Google Ads, MySQL" />
-          <Skills skill={intl.formatMessage({ id: 'cv.skillList' })} />
+          <Skills id="cv.skills" headline={intl.formatMessage({ id: 'cv.skills' })} type={intl.formatMessage({ id: 'cv.skillThemeTools' })} skill={translateWithLineBreaks(intl, 'cv.skillListTools')} />
+          <Skills type={intl.formatMessage({ id: 'cv.skillThemeProcess' })} skill={translateWithLineBreaks(intl, 'cv.skillListProcess')} />
+          <Skills type={intl.formatMessage({ id: 'cv.skillThemeProgramming' })} skill={translateWithLineBreaks(intl, 'cv.skillListProgramming')} />
+          <Skills type={intl.formatMessage({ id: 'cv.skillThemeOther' })} skill={translateWithLineBreaks(intl, 'cv.skillListOther')} />
         </div>
 
         {/* Education */}
         <div className="bgColor section">
-          <Experience id="cv.education" headline={intl.formatMessage({ id: 'cv.education' })} title={intl.formatMessage({ id: 'cv.info' })} company={intl.formatMessage({ id: 'cv.aalto' })} time="2017-" description={intl.formatMessage({ id: 'cv.infoDesc' })} />
+          <Experience id="cv.education" headline={intl.formatMessage({ id: 'cv.education' })} title={intl.formatMessage({ id: 'cv.info' })} company={intl.formatMessage({ id: 'cv.aalto' })} time="2017-2024" description={intl.formatMessage({ id: 'cv.infoDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.ranskavaihto' })} company={intl.formatMessage({ id: 'cv.usmb' })} time="2022" description={intl.formatMessage({ id: 'cv.usmbDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.ylioppilas' })} company={intl.formatMessage({ id: 'cv.norssi' })} time="2013-2017" description={intl.formatMessage({ id: 'cv.norssiDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.vaihto' })} company={intl.formatMessage({ id: 'cv.csc' })} time="2015" description={intl.formatMessage({ id: 'cv.vaihtoDesc' })} />

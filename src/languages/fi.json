@@ -51,5 +51,12 @@
     "cv.csc": "Colac Secondary College",
     "cv.vaihtoDesc": "Vietin vuoden Australiassa Colacissa opiskelemassa Colac Secondary Collegessa.",
     "cv.skills": "Taidot",
-    "cv.skillList": "Rautalankamallinnus, prototypointi, käyttäjätutkimus, A/B-testaus, informaation visualisointi, tuotesuunnittelu, kommunikaatio, valokuvaus, typografia, editointi, fasilitointi, luova ongelmanratkaisu, markkinointi..."
+    "cv.skillThemeTools": "Työkalut",
+    "cv.skillListTools": "Adobe CC {br}Figma{br}Marvel App{br}Microsoft Office{br}Google Analytics{br}Notion{br}",
+    "cv.skillThemeProcess": "Suunnitteluprosessi",
+    "cv.skillListProcess": "Käyttäjätutkimus ja käyttäjätestaus{br}Rautalankamallinnus ja prototypointi{br}Käyttöliittymäsuunnittelu{br}Design thinking{br}Informaation visualisointi{br}",
+    "cv.skillThemeProgramming": "Ohjelmointi",
+    "cv.skillListProgramming": "HTML, CSS, React, Angular, JS, Python, Scala, Sass, MySQL{br}",
+    "cv.skillThemeOther": "Muut",
+    "cv.skillListOther": "Certified Scrum Master{br}Taktinen ja strateginen ajattelu (esim. Lautapelien SM 1.sija 2023 & 2024){br}Johtaminen ja fasilitoiminen (esim. Veikon päätoimittaja vuonna 2015-2017){br}Projektien aikatauluttaminen, suunnittelu ja priorisointi (esim. Itse rakentama matkailupaku Vanda){br}Markkinointi (esim. Kandityö aiheesta)"
 }
