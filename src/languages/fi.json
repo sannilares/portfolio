@@ -1,8 +1,8 @@
 {
-    "marketing": "Markkinointi",
-    "photoAndVideo": "Kuva ja video",
-    "webPages": "Verkkosivut",
-    "cursorHeadline": "Valitut otokset",
+    "UIUX": "Käytettävyys",
+    "graphicalDesign": "Grafiikka",
+    "otherProjects": "Muut projektit",
+    "cursorHeadline": "Ihanaa, että eksyit tänne!",
     "cursor": "Siirrä kursori kuvan päälle taikka klikkaa kuvaa saadaksesi lisää tietoa.",
     "language": "In English",
     "back": "poistu",
@@ -11,63 +11,45 @@
     "design": "Käytettävyys, design ja tekniikka.",
     "aalto": "Aalto-yliopisto {br} Informaatioverkostot",
     "cv.who": "Kuka Sanni?",
-    "cv.intro": "Olen UX/UI-designerin ja palvelumuotoilijan sekoitus vahvalla tietoteknisellä pohjalla. Opiskelen Aalto-yliopistossa Informaatioverkostoja kolmatta vuotta, ja matkan varrella olen löytänyt sivuaineen niin tietotekniikasta kuin mediasta.{br}Aikanani aloitin opinnot infolla siksi, että olin kiinnostunut siitä sun tästä. Eikä mikään ole muuttunut. Kuitenkin erityisesti minua kiehtoo ihmisen käyttäytyminen ja sitä kautta UX-design. Haluan tehdä ihmisten elämästä helpompaa ja samalla oppia lisää siitä, miksi teemme asiat niin kuin teemme.{br}Olen avoin tiimityöskentelijä ja hyppään uusiin projekteihin mukaan täysillä. Vahvuuksiani ovat loogisuus ja huolellisuus, etsin luovia ratkaisuja ja uusia näkökulmia. Olen käynyt useita kursseja ryhmän ohjaamisesta ja -johtamisesta.{br}Olen musikaalinen ja harrastan kiipeilyä ja tanssia. Nautin lukemisesta, lautapeleistä ja maalaamisesta. Rakastan luontoa, vaeltamista ja laskettelua.",
-    
+    "cv.intro": "Olen innostava ja helposti innostuva sosiaalinen tiimityöskentelijä. UI/UX-designerin ja palvelumuotoilijan sekoitusena kehitän tarkoituksenmukaisia, tyylikkäitä ja helppokäyttöisiä digitaalisia palveluita.{br}Valmistuin diplomi-insinöörksi keväällä 2024 opiskeltuani Aalto-yliopistossa Informaatioverkostoja pääaineenani Business and Organisational Design. Minulla on laaja-alaista ymmärrystä sekä työkalut ratkaista komplekseja ongelmia ja omaksua ja analysoida nopeasti uutta tietoa.{br}Minua kiehtoo ihmisen käyttäytyminen, luovan työskentelyn ja ongelmanratkaisun yhdistäminen sekä fasilitointi. Haluaisinkin työurallani päästä kehittymään ja pureutumaan näihin kiinnostuksen kohteisiin. Vahvuuksiani ovat loogisuus ja huolellisuus. Olen empaattinen ja luova ongelmanratkaisija. Hyppään uusiin projekteihin mukaan täysillä.{br}Vapaa-ajalla minut löytää seikkailemasta luonnosta. Kierrän Euroopan luontokohteita rakentamallani matkailupaku Vandalla, laskettelen, kiipeilen ja vaellan. Rakastan myös lautapelejä ja lukemista. Omia projekteja löytyykin lautapelin kehittämisestä fantasiakirjan kirjoittamiseen.",
     "cv.workExperience": "Työkokemus",
-    
+    "cv.taitoJob": "UI/UX-designer",
+    "cv.taito": "Taito United",
+    "cv.taitoDesc": "UI/UX-suunnittelijana osallistuin erilaisten digitaalisten tuotteiden suunnitteluprosessiin. Tehtäviini kuului käyttöliittymäsuunnittelua, rautalankamallinnusta, prototyyppien luomista, käyttöliittymien iteroimista ja design sprinttejä designin määrittelyksi.",
+    "cv.thesisJob": "Diplomityöntekijä",
+    "cv.thesis": "Aalto-yliopisto",
+    "cv.thesisDesc": "Työskentelin diplomityötutkijana CRAI-CIS-tutkimusryhmässä tehden laadullista tutkimusta ja haastatteluja osana diplomityötäni visuaalisesta disinformaatiosta suomalaisessa uutismediassa. Tutkimuksen kautta sain arvokasta tietoa visuaalisen disinformaation monimutkaisuudesta ja sen vaikutuksesta yhteiskuntaan.",
     "cv.subrosaJob": "UI/UX-designer",
     "cv.subrosa": "Subrosa Oy",
-    "cv.subrosaDesc": "Käyttöliittymäsuunnittelua, visuaalista suunnittelua, käyttökokemuksen optimointia, graafista suunnittelua, tuotteen vaatimusten määrittelyä, ideointia ja kehitystä. Tiimin ainoana suunnittelijana olen ottanut kopin niin visuaalisen ilmeen viimeistelystä kuin toiminnallisuuksien suunnittelusta ja vaatimuksista.",
-    
+    "cv.subrosaDesc": "Työskentelin käyttöliittymäsuunnittelun, visuaalisen suunnittelun, käyttökokemuksen optimoinnin, graafisen suunnittelun, tuotteen vaatimusten määrittelyn, ideoinnin ja kehityksen parissa. Tiimin ainoana suunnittelijana otin kopin niin visuaalisen ilmeen viimeistelystä kuin toiminnallisuuksien suunnittelusta ja vaatimuksista.",
     "cv.NAPCONJob": "Ohjelmistoinsinööri-harjoittelija",
     "cv.NAPCON": "NAPCON, Neste",
     "cv.NAPCONDesc": "Front-end ohjelmointia ja käyttöliittymäsuunnittelua scrum-tiimissä, sekä yhteistyötä markkinoinnin kanssa tehden nettisivuja, käytettävyysanalyysiä sekä kasvuhakkerointia (growth hacking). Kehityin niin ohjelmoijana, datan visualisoijana kuin tiimityöntekijänä erityisesti etätyössä.",
-    
     "cv.juniorJob": "Assistentti",
     "cv.junior": "Aalto-yliopisto Junior",
-    "cv.juniorDesc": "Opetan ja ohjaan työpajoja vieraileville opiskelijaryhmille tieteestä ja taiteesta. Osallistun työpajojen sekä Juniorin toiminnan kehittämiseen ja työstän Juniorin graafista ilmettä markkinoinnissa.",
-    
+    "cv.juniorDesc": "Opetin ja ohjasin työpajoja vieraileville opiskelijaryhmille tieteestä ja taiteesta. Osallistun työpajojen sekä Juniorin toiminnan kehittämiseen ja työstän Juniorin graafista ilmettä markkinoinnissa.",
     "cv.siemensJob": "Harjoittelija",
     "cv.siemens": "Siemens",
-    "cv.siemensDesc": "Suunnittelin talonsisäisen sovelluksen käyttöliittymän ja osallistuin sen implementointiin. Suunnittelin ICT-puolen tuoteportfolion ja osallistuin MindSphere -IoT alustan kehittämiseen.",
-    
+    "cv.siemensDesc": "Suunnittelin talon sisäisen sovelluksen käyttöliittymän ja osallistuin sen implementointiin. Suunnittelin ICT-puolen tuoteportfolion ja osallistuin MindSphere -IoT alustan kehittämiseen.",
     "cv.ultraJob": "UI/UX-designer",
     "cv.ultra": "Ultra Software",
     "cv.ultraDesc": "Osallistuin eri projekteteihin käyttöliittymäsuunnittelijana.",
-
     "cv.churchJob": "Rippikouluohjaaja",
     "cv.church": "Herttoniemen seurakunta",
     "cv.churchDesc": "Toimin opettajana ja ohjaajana useilla eri rippikoululeireillä. Olin vastuussa valokuvauksesta sekä leirilehden toimittamisesta ja taitosta. Vastasin myös isostoiminnasta sekä osallistuin leirin sisältöjen ja opetuksen kehittämiseen.",
-    
-    "cv.messuJob": "Promoottori",
-    "cv.messu": "Messukeskus",
-    "cv.messuDesc": "Kuvasin messuvieraita ja edistin eri messujen näkyvyyttä sosiaalisessa mediassa.",
-
     "cv.education": "Koulutus",
-    
-    "cv.info": "Informaatioverkostot",
+    "cv.info": "Diplomi-insinööri",
     "cv.aalto": "Aalto-yliopisto",
-    "cv.infoDesc": "Informaatioverkostot opettavat ymmärtämään tieto- ja viestintätekniikan vaikutuksia ja mahdollisuuksia sekä suunnittelemaan uusia tuotteita ja palveluja. Valmistuin tekniikan kandidaatiksi keväällä 2020 erinomaisin taidoin. Opintosuuntaukseni on user, data & design.",
-    
+    "cv.infoDesc": "Pääaineeni informaatioverkostot opetti ymmärtämään tieto- ja viestintätekniikan vaikutuksia ja mahdollisuuksia sekä suunnittelemaan uusia tuotteita ja palveluja. Valmistuin tekniikan kandidaatiksi keväällä 2020 ja diplomi-insinööriksi keväällä 2024 erinomaisin taidoin. Opintosuuntaukseni oli business and organizational design.",
+    "cv.ranskavaihto": "Vaihto ranskassa",
+    "cv.usmb": "Université Savoie Mont Blanc",
+    "cv.usmbDesc": "Olin vaihto-opiskelijana Ranskan Annecyssä. Opiskelin vaihdon aikana sivuaineen tietojohtamisesta. Suoritin noin puolet opinnoistani ranskaksi.",
     "cv.ylioppilas": "Ylioppilas",
     "cv.norssi": "Helsingin normaalilyseo",
     "cv.norssiDesc": "90 kurssia, keskiarvo 9.0. Ylioppilastutkinto: Matematiikka pitkä (E), äidinkieli (E), englanti (E), fysiikka (C), kemia (E) ja psykologia (E).",
-    
     "cv.vaihto": "Vaihtovuosi",
     "cv.csc": "Colac Secondary College",
-    "cv.vaihtoDesc": "Vaihtovuosi Australiassa.",
-    
+    "cv.vaihtoDesc": "Vietin vuoden Australiassa Colacissa opiskelemassa Colac Secondary Collegessa.",
     "cv.skills": "Taidot",
-    "cv.skillList": "Rautalankamallinnus, prototypointi, käyttäjätutkimus, A/B-testaus, informaation visualisointi, tuotesuunnittelu, kommunikaatio, valokuvaus, typografia, editointi, fasilitointi, luova ongelmanratkaisu, markkinointi...",
-    
-    "cv.vapaaehtois": "Vapaaehtoistyö",
-    "cv.vSchoolJob": "Koulun toiminta",
-    "cv.vSchool": "Aalto-yliopisto & Helsingin normaalilyseo",
-    "cv.vSchoolDesc": "Toimin hallituksen opiskelijaedustajana vuodesta 2018. Olen toiminut tutorina syksystä 2018 asti. 2019 kuuluin killan tietskarijengiin. Lukiossa olin oppilaskunnan hallituksessa ja koulun lehden Veikon päätoimittaja.",
-    "cv.scout": "Partio",
-    "cv.scoutgroup": "Laajasalon Siniset & 3rd/4th Colac Scout",
-    "cv.scoutDesc": "Olen johtanut seikkailijoista koostuvaa ryhmää 2012-2014. 2015 hyväntekeväisyysmatka Fidzille, missä rakensimme päiväkodin ja leikkipuiston paikallisille, sekä suunnittelimme kyltin pienelle kylälle. Finnjamboreella 2016 toimin pakohuonepelin valvojana.",
-    "cv.vChurchJob": "Isonen & kerhonohjaaja",
-    "cv.vChurch": "Herttoniemen seurakunta",
-    "cv.vChurchDesc": "Toimin isosena Lapin vaellusrippikoulussa kesinä 2013 ja 2014. Ohjasin 10-13 vuotiaiden kerhoa 2012-2014."
+    "cv.skillList": "Rautalankamallinnus, prototypointi, käyttäjätutkimus, A/B-testaus, informaation visualisointi, tuotesuunnittelu, kommunikaatio, valokuvaus, typografia, editointi, fasilitointi, luova ongelmanratkaisu, markkinointi..."
 }

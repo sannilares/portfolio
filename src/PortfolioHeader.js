@@ -1,6 +1,6 @@
 import React from 'react';
 import './PortfolioHeader.css';
-import mina from './assets/minä.jpg';
+import mina from './assets/mina.jpg';
 import linkedin from './assets/LI-In-Bug.png';
 import Portfolio from './Portfolio';
 import { FormattedMessage, injectIntl } from 'react-intl';

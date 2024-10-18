@@ -13,10 +13,10 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import websiteData from './websiteData';
-import marketingData from './marketingData';
-import photosData from './photosData';
+import UIUXData from './DataUIUX';
+import graphicsData from './DataGraphics';
 import Gallery from './Gallery';
+import OhterProjectsData from './DataOtherProjects';
 
 // Jos haetaan ulkopuolista dataa, on kieli määriteltävä erikseen fallbackeineen
 const lang = localStorage.getItem('language') || 'fi';
@@ -100,11 +100,11 @@ function Portfolio({ intl }) {
         </>
       )}
 
-      {/* Webpages */}
+      {/* UI/UX Design */}
       <Gallery
-        headline={<FormattedMessage id="webPages" />}
+        headline={<FormattedMessage id="UIUX" />}
         columns={bigScreen ? 2 : 1}
-        data={websiteData}
+        data={UIUXData}
         webCellHeight={webCellHeight}
         setHeadline={setHeadline}
         setTileData={setTileData}
@@ -114,11 +114,11 @@ function Portfolio({ intl }) {
         lang={lang}
       />
 
-      {/* Markkinointi */}
+      {/* Graphical design */}
       <Gallery
-        headline={<FormattedMessage id="marketing" />}
+        headline={<FormattedMessage id="graphicalDesign" />}
         columns={bigScreen ? 3 : 1}
-        data={marketingData}
+        data={graphicsData}
         webCellHeight={webCellHeight}
         setHeadline={setHeadline}
         setTileData={setTileData}
@@ -128,11 +128,11 @@ function Portfolio({ intl }) {
         lang={lang}
       />
 
-      {/* Photography and videos */}
+      {/* Ohter projects */}
       <Gallery
-        headline={<FormattedMessage id="photoAndVideo" />}
+        headline={<FormattedMessage id="otherProjects" />}
         columns={bigScreen ? 3 : 1}
-        data={photosData}
+        data={OhterProjectsData}
         webCellHeight={webCellHeight}
         setHeadline={setHeadline}
         setTileData={setTileData}

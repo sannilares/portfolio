@@ -1,8 +1,8 @@
 {
-    "marketing": "Marketing",
-    "photoAndVideo": "Photography and video",
-    "webPages": "Web pages",
-    "cursorHeadline": "Chosen ones",
+    "UIUX": "User and usability",
+    "graphicalDesign": "Graphics",
+    "otherProjects": "Other Projects",
+    "cursorHeadline": "So nice to have you here!",
     "cursor": "Move your cursor on top of an image to get more information.",
     "language": "Suomeksi",
     "back": "back",
@@ -11,63 +11,45 @@
     "design": "Usability, design and technology.",
     "aalto": "Aalto University {br} Information Networks",
     "cv.who": "Who am I?",
-    "cv.intro": "I’m a mixture of UX/UI-designer and Service Designer with a strong understanding of technology. I study Information Networks in Aalto University for the  third year. I minor in Computer Science and Media. {br} Back in the times, I chose to study Information Networks for the simplest reason: I was interested in way too many things. And nothing has changed. However, I’m probably most interested by peoples’ behaviour - the reasons behind our decisions and needs. I want to make users’ life as easy as possible while learning more about why we do things as we do. {br} I’m social team worker and when I start something, I put all my effort into it. I try to seek for new perspectives and creative solutions, indeed being careful and logical are my strengths.  {br} I’m musical and I climb and dance during my freetime. I enjoy reading, board games and painting. I love nature: hiking and downhill skiing.",
-    
+    "cv.intro": "I’m a mixture of UX/UI-designer and Service Designer with a strong understanding of technology. I study Information Networks in Aalto University for the third year. I minor in Computer Science and Media. {br} Back in the times, I chose to study Information Networks for the simplest reason: I was interested in way too many things. And nothing has changed. However, I’m probably most interested by peoples’ behaviour - the reasons behind our decisions and needs. I want to make users’ life as easy as possible while learning more about why we do things as we do. {br} I’m social team worker and when I start something, I put all my effort into it. I try to seek for new perspectives and creative solutions, indeed being careful and logical are my strengths.  {br} I’m musical and I climb and dance during my freetime. I enjoy reading, board games and painting. I love nature: hiking and downhill skiing.",
     "cv.workExperience": "Work Experience",
-    
+    "cv.taitoJob": "UI/UX-designer",
+    "cv.taito": "Taito United",
+    "cv.taitoDesc": "As a UI/UX designer I participated in the design process for various digital products, ensuring a seamless user experience and intuitive interface. My role involved conducting dreawing UI, wireframing, prototyping, and design sprinting to iterate and refine designs.",
+    "cv.thesisJob": "Masters researcher",
+    "cv.thesis": "Aalto-yliopisto",
+    "cv.thesisDesc": "I worked as a Masters Researcher in a research group CRAI-CIS to conduct qualitative research and interviews as part of my thesis on visual disinformation in Finnish news media. Through this study, I gained valuable insights into the complexities of visual disinformation and its impact on society.",
     "cv.subrosaJob": "UI/UX-designer",
     "cv.subrosa": "Subrosa Oy",
     "cv.subrosaDesc": "UI/UX-design, visual design, optimisation of user experience, graphical design and defining product requiremets. As a only designer of the team, I have refined the visual look of projects as well as designing functionalities and requirements for systems.",
-    
     "cv.NAPCONJob": "Software Engineer Trainee",
     "cv.NAPCON": "NAPCON at Neste",
     "cv.NAPCONDesc": "Front-end programming and UI-design in a scrum-team. Helped also the marketing team by making websites, usage analysis and doing growth hacking. Especially my skills in programming, data visualization and remote team work were developed.",
-    
     "cv.juniorJob": "Assistant",
     "cv.junior": "Aalto University Junior",
-    "cv.juniorDesc": "I teach and assist workshops about science and art for student groups visiting Aalto. I create graphical design and visual marketing for Aalto Junior. I participate in creating new workshops and developing the existing ones.",
-    
+    "cv.juniorDesc": "I teach and assist workshops focusing on science, technology and art for student groups visiting Aalto University, fostering creativity and interdisciplinary learning. I demonstrated strong communication and interpersonal skills in guiding students through hands-on activities and facilitating meaningful learning experiences. I created graphical designs and marketing materials for Aalto Junior, effectively promoting program offerings and attracting student participation. I developed new workshops and enhanced the existing ones, ensuring relevance, engagement, and educational value for participants.",
     "cv.siemensJob": "Trainee",
     "cv.siemens": "Siemens",
     "cv.siemensDesc": "I designed (UI/UX) in house IoT application and participated in implementing it. I designed ICT Service Portfolio and helped developing an IoT platform called MindSphere.",
-    
     "cv.ultraJob": "UI/UX-designer",
     "cv.ultra": "Ultra Software",
     "cv.ultraDesc": "Projects in UI and UX design in desktop and mobile.",
-    
     "cv.churchJob": "Confirmation school director",
     "cv.church": "Herttoniemi Church",
     "cv.churchDesc": "I worked as teacher and instructor in many different confirmation camps. I was responsible for camp magazines (editor in chief and editing the final version) as well as photography during camps. I was in charge of guiding the group leaders (isonen) and I participated in creating content for lessons and for other activities.",
-    
-    "cv.messuJob": "Promoter",
-    "cv.messu": "Expo and Convention center",
-    "cv.messuDesc": "I photographed visitors in exhibition center and promoted different exhibitions in social media.",
-    
     "cv.education": "Education",
-    
     "cv.info": "Information networks",
     "cv.aalto": "Aalto University",
     "cv.infoDesc": "The Information Networks programme applies problem-based learning and collaborative group work, often conducted in real-life projects with companies and other organisations. I graduated as Bachelor of Science in spring 2020 with excellent grades. Focus area in my masters is in user, data and design.",
-    
+    "cv.ranskavaihto": "Exchange in France",
+    "cv.usmb": "Université Savoie Mont Blanc",
+    "cv.usmbDesc": "I studied Information Management in France.",
     "cv.ylioppilas": "Baccalaureate",
     "cv.norssi": "Helsingin normaalilyseo",
     "cv.norssiDesc": "90 courses, average of 9. Matriculation examination: Mathematics, advanced syllabus (E), Finnish (E), English (E), Physics (C), Chemistry (E) and Psychology (E).",
-    
-    "cv.vaihto": "Exchange year",
+    "cv.vaihto": "Exchange in Australia",
     "cv.csc": "Colac Secondary College",
-    "cv.vaihtoDesc": "Exchange year in Australia.",
-    
-    "cv.skills": "Skills",
-    "cv.skillList": "Wireframing, prototyping, user research, A/B-testing, information visualization, product design, communication, branding, interative processes, collaboration, user emapthy, photography, typography, editing, facilitating, creative problem solving, maketing...",
-    
-    "cv.vapaaehtois": "Voluntary Work",
-    "cv.vSchoolJob": "Activity in school",
-    "cv.vSchool": "Aalto University & Helsingin normaalilyseo",
-    "cv.vSchoolDesc": "Halloped (student representative in administration) and tutor from 2018. In year 2019 I was in Athenes (guild of Information Networks) IT-support. In highschool, I was in student board and an editor in chief of our school magazine Veikko.",
-    "cv.scout": "Scout",
-    "cv.scoutgroup": "Laajasalon Siniset & 3rd/4th Colac Scout",
-    "cv.scoutDesc": "During 2012-2014, I guided a scout group. In 2015 I went to a volunteer trip to Fiji to build a kindergarten and park for the locals. I guided room escape in Finnjamboree during summer 2016.",
-    "cv.vChurchJob": "Tutor & club director",
-    "cv.vChurch": "Herttoniemi church",
-    "cv.vChurchDesc": "I was a group leader in a hiking confirmation school during summers 2013-2014. I was also a club leader 2012-2014."
+    "cv.vaihtoDesc": "Highschool exchange year in Australia.",
+    "cv.skills": "Key strengths",
+    "cv.skillList": "Wireframing, prototyping, user research, A/B-testing, information visualization, product design, communication, branding, interative processes, collaboration, user emapthy, photography, typography, editing, facilitating, creative problem solving, maketing..."
 }

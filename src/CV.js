@@ -151,9 +151,7 @@ function Introduction(props) {
           <div className="CVButtons">
             <Button onClick={() => navigateDownTo('cv.workExperience')}>{intl.formatMessage({ id: 'cv.workExperience' })}</Button>
             <Button onClick={() => navigateDownTo('cv.education')}>{intl.formatMessage({ id: 'cv.education' })}</Button>
-            <Button onClick={() => navigateDownTo('cv.skills')}>{intl.formatMessage({ id: 'cv.skills' })}</Button>
-            <Button onClick={() => navigateDownTo('cv.vapaaehtois')}>{intl.formatMessage({ id: 'cv.vapaaehtois' })}</Button>
-          </div>
+            <Button onClick={() => navigateDownTo('cv.skills')}>{intl.formatMessage({ id: 'cv.skills' })}</Button>          </div>
         </div>
       </div>
     );
@@ -225,7 +223,7 @@ function CV(props) {
         <Introduction
           name="Sanni Lares"
           phone="0400 267 030"
-          email="sanni.lares@aalto.fi"
+          email="sanni.lares@gmail.com"
           title={intl.formatMessage({ id: 'cv.who' })}
           paragraphs={translateWithLineBreaks(intl, 'cv.intro')}
           intl={intl}
@@ -233,9 +231,11 @@ function CV(props) {
 
         {/* Work experience */}
         <div className="bgColor section">
-          <Experience id="cv.workExperience" headline={intl.formatMessage({ id: 'cv.workExperience' })} title={intl.formatMessage({ id: 'cv.subrosaJob' })} company={intl.formatMessage({ id: 'cv.subrosa' })} time="4/2020-5/2020, 9/2020-" description={intl.formatMessage({ id: 'cv.subrosaDesc' })} />
+          <Experience id="cv.workExperience" headline={intl.formatMessage({ id: 'cv.workExperience' })} title={intl.formatMessage({ id: 'cv.taitoJob' })} company={intl.formatMessage({ id: 'cv.taito' })} time="5/2021-6/2024" description={intl.formatMessage({ id: 'cv.taitoDesc' })} />
+          <Experience title={intl.formatMessage({ id: 'cv.thesisJob' })} company={intl.formatMessage({ id: 'cv.thesis' })} time="2/2023-9/2023" description={intl.formatMessage({ id: 'cv.thesisDesc' })} />
+          <Experience title={intl.formatMessage({ id: 'cv.subrosaJob' })} company={intl.formatMessage({ id: 'cv.subrosa' })} time="4/2020-5/2021" description={intl.formatMessage({ id: 'cv.subrosaDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.NAPCONJob' })} company={intl.formatMessage({ id: 'cv.NAPCON' })} time="5/2020-8/2020" description={intl.formatMessage({ id: 'cv.NAPCONDesc' })} />
-          <Experience title={intl.formatMessage({ id: 'cv.juniorJob' })} company={intl.formatMessage({ id: 'cv.junior' })} time="8/2019-" description={intl.formatMessage({ id: 'cv.juniorDesc' })} />
+          <Experience title={intl.formatMessage({ id: 'cv.juniorJob' })} company={intl.formatMessage({ id: 'cv.junior' })} time="8/2019-6/2023" description={intl.formatMessage({ id: 'cv.juniorDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.siemensJob' })} company={intl.formatMessage({ id: 'cv.siemens' })} time="5/2019-8/2019" description={intl.formatMessage({ id: 'cv.siemensDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.ultraJob' })} company={intl.formatMessage({ id: 'cv.ultra' })} time="1/2019-12/2019" description={intl.formatMessage({ id: 'cv.ultraDesc' })} />
         </div>
@@ -250,16 +250,9 @@ function CV(props) {
         {/* Education */}
         <div className="bgColor section">
           <Experience id="cv.education" headline={intl.formatMessage({ id: 'cv.education' })} title={intl.formatMessage({ id: 'cv.info' })} company={intl.formatMessage({ id: 'cv.aalto' })} time="2017-" description={intl.formatMessage({ id: 'cv.infoDesc' })} />
+          <Experience title={intl.formatMessage({ id: 'cv.ranskavaihto' })} company={intl.formatMessage({ id: 'cv.usmb' })} time="2022" description={intl.formatMessage({ id: 'cv.usmbDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.ylioppilas' })} company={intl.formatMessage({ id: 'cv.norssi' })} time="2013-2017" description={intl.formatMessage({ id: 'cv.norssiDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.vaihto' })} company={intl.formatMessage({ id: 'cv.csc' })} time="2015" description={intl.formatMessage({ id: 'cv.vaihtoDesc' })} />
-        </div>
-
-
-        {/* Voluntary work */}
-        <div className="section">
-          <Experience id="cv.vapaaehtois" headline={intl.formatMessage({ id: 'cv.vapaaehtois' })} title={intl.formatMessage({ id: 'cv.vSchoolJob' })} company={intl.formatMessage({ id: 'cv.vSchool' })} time="2013-" description={intl.formatMessage({ id: 'cv.vSchoolDesc' })} />
-          <Experience title={intl.formatMessage({ id: 'cv.scout' })} company={intl.formatMessage({ id: 'cv.scoutgroup' })} time="2012-2016" description={intl.formatMessage({ id: 'cv.scoutDesc' })} />
-          <Experience title={intl.formatMessage({ id: 'cv.vChurchJob' })} company={intl.formatMessage({ id: 'cv.vChurch' })} time="2012-2015" description={intl.formatMessage({ id: 'cv.vChurchDesc' })} />
         </div>
       </div>
     </div>
