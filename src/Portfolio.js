@@ -85,6 +85,13 @@ function Portfolio({ intl }) {
     setTileData({});
   };
 
+  const uiuxIntro = lang === 'en' ? (
+    <>
+      <p>My work has gradually moved from designing interfaces toward solving broader problems — understanding users, business needs and the systems behind the experience.</p>
+      <p>These projects span UX/UI design, service design, experimentation and functional architecture.</p>
+    </>
+  ) : null;
+
   return (
     <div>
       {chosenOnes && (
@@ -103,6 +110,7 @@ function Portfolio({ intl }) {
       {/* UI/UX Design */}
       <Gallery
         headline={<FormattedMessage id="UIUX" />}
+        intro={uiuxIntro}
         columns={bigScreen ? 2 : 1}
         data={UIUXData}
         webCellHeight={webCellHeight}

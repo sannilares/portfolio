@@ -12,6 +12,7 @@ const gridContainerStyle = {
 function Gallery(props) {
   const {
     headline,
+    intro,
     columns,
     data,
     webCellHeight,
@@ -28,6 +29,7 @@ function Gallery(props) {
       <div className="block">
         <p className="blockHeader">{headline}</p>
       </div>
+      {intro && <div className="galleryIntro">{intro}</div>}
       <div className="galleryContainer">
         <div className="gallery">
           <GridList style={gridContainerStyle} cellHeight={webCellHeight} spacing={spacing} className={screenSize} cols={columns}>
@@ -60,6 +62,7 @@ Gallery.propTypes = {
   columns: PropTypes.number,
   data: PropTypes.array,
   headline: PropTypes.object,
+  intro: PropTypes.node,
   lang: PropTypes.string,
   setTileData: PropTypes.func,
   setOpen: PropTypes.func,

@@ -31,6 +31,18 @@
   left: 106px;
 }
 
+.galleryIntro {
+  font-size: 18px;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  max-width: 700px;
+  margin: 10px 20px 0 116px;
+}
+
+.galleryIntro p {
+  margin: 0 0 10px 0;
+}
+
 /* Gallery itself */
 .galleryContainer {
   display: flex;
@@ -150,6 +162,10 @@
   .bH2 {
     position: absolute;
     left: 110px;
+  }
+
+  .galleryIntro {
+    margin: 10px 20px 0 20px;
   }
 
   .gallery {
