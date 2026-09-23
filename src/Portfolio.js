@@ -8,6 +8,7 @@ import { FormattedMessage } from 'react-intl';
 import UIUXData from './DataUIUX';
 import Gallery from './Gallery';
 import OhterProjectsData from './DataOtherProjects';
+import CareerTimeline from './CareerTimeline';
 
 export const UIUX_SECTION_ID = 'selected-projects';
 export const OTHER_PROJECTS_SECTION_ID = 'personal-projects';
@@ -55,7 +56,10 @@ function Portfolio() {
   return (
     <div>
       {chosenOnes && (
-        <ColorPortal />
+        <>
+          <ColorPortal />
+          <CareerTimeline />
+        </>
       )}
 
       {/* UI/UX Design */}
