@@ -87,11 +87,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
 }
 
 .gridListTiltLink {
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -101,7 +104,23 @@
 }
 
 .gridListTiltImg {
-  width: 97%;
+  max-width: 97%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.gridListTiltTitle {
+  flex: 0 0 auto;
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 97%;
 }
 
 .galleryBigScreen {

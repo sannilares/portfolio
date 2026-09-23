@@ -18,12 +18,18 @@ const UIUXData = [
     img: poppankki,
     title: {
       fi: 'Asuntolaina-asiakkaiden lisääminen',
-      en: 'Increasing Mortgage Uptake',
+      en: 'Rethinking the Mortgage Journey',
     },
     cols: 1,
     desc: {
       fi: 'Kurssin Societal Design Project -ryhmätyö, jonka asiakkaana toimi POP Pankki. POP Pankki pyysi meitä kurssin aikana selvittämään miten houkutella kasvukeskuksen ihmisiä asuntolaina- asiakkaiksi.Tähän ongelmaan pureuduttiin Lean Service Creation - palvelumuotoiluprosessin avulla.',
-      en: 'Our team tackled the challenge of boosting first-time mortgage uptake in growth centers with POP Bank as our client. To tackle this challenge, we employed the Lean Service Creation service design process.',
+      en: `How might a bank attract more first-time home buyers in growing urban areas while balancing digital self-service with personal guidance?
+
+Together with POP Pankki, our team explored how the mortgage journey could better support first-time buyers. The existing POP Lainalupaus service already made applying for a mortgage faster and more digital, but the challenge was to understand where personal service could make the biggest difference.
+
+Using the Lean Service Creation process, we explored the needs, motivations and emotions of first-time home buyers and mapped their journey through the different stages of buying a home. We looked at how people choose their bank, when they need support, and where digital self-service works — and where a human connection still matters.
+
+The project resulted in customer profiles and a service journey that helped identify opportunities for combining digital convenience with more targeted personal support.`,
     },
     carousel: [
       {

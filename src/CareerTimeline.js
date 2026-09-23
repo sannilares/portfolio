@@ -9,13 +9,12 @@ const timeline = [
   { year: '2021–2024', key: 'cv.taito' },
   { year: '2024', key: 'cv.mastersDegree' },
   { year: '2023', key: 'cv.bachelorsDegree' },
-  { year: '2023', key: 'cv.thesis' },
   { year: '2019–2023', key: 'cv.junior' },
   { year: '2022', key: 'cv.usmb' },
   { year: '2020–2021', key: 'cv.subrosa' },
   { year: '2020', key: 'cv.NAPCON' },
   { year: '2019', key: 'cv.siemens' },
-  { year: '2019', key: 'cv.ultra' },
+  { year: '2019', key: 'cv.csm' },
 ];
 
 function CareerTimeline() {

@@ -31,7 +31,7 @@ function Portfolio() {
   const chosenOnes = useMediaQuery(useTheme().breakpoints.up('lg'));
   const webCellHeight = bigScreen ? 340 : 292;
   const screenSize = chosenOnes ? 'galleryBigScreen' : 'gallerySmallScreen';
-  const spacing = bigScreen ? 2 : 8;
+  const spacing = bigScreen ? 24 : 16;
   const { hash } = useLocation();
 
   useEffect(() => {
