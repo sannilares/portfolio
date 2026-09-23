@@ -6,9 +6,6 @@ import LT from './assets/LT.png';
 import LTBP from './assets/LT-BP.png';
 import LTSR from './assets/LT-SR.png';
 import poppankki from './assets/pop.png';
-import poppankkiBP from './assets/POP-BP.png';
-import poppankkiS from './assets/POP-S.png';
-import poppankkiR from './assets/POP-R.png';
 
 
 
@@ -31,20 +28,6 @@ Using the Lean Service Creation process, we explored the needs, motivations and 
 
 The project resulted in customer profiles and a service journey that helped identify opportunities for combining digital convenience with more targeted personal support.`,
     },
-    carousel: [
-      {
-        img: poppankki,
-      },
-      {
-        img: poppankkiBP,
-      },
-      {
-        img: poppankkiS,
-      },
-      {
-        img: poppankkiR,
-      },
-    ],
   },
   {
     slug: 'new-from-old',
