@@ -38,6 +38,15 @@
   max-width: 100%;
 }
 
+.projectDetailCarousel {
+  width: 100%;
+}
+
+.projectDetailCarouselImg {
+  display: block;
+  width: 100%;
+}
+
 .projectDetailImageNote {
   margin: -14px 0 30px 0;
   font-size: 13px;

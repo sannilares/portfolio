@@ -1,8 +1,10 @@
 import veikko from './assets/Veikot.png';
 import vanda from './assets/vandadrawing.png';
 import portfolio from './assets/Portfolio.png';
-import portfolioBP from './assets/portfolio-BP.png';
-import portfolioS from './assets/portfolio-S.png';
+import vandaMountainView from './assets/VandaMountainView.jpg';
+import vandaBedInterior from './assets/VandaBedInterior.jpg';
+import vandaKitchenView from './assets/VandaKitchenView.jpg';
+import vandaSkylightBuild from './assets/VandaSkylightBuild.jpg';
 
 
 const OhterProjectsData = [
@@ -31,6 +33,25 @@ const OhterProjectsData = [
             fi: 'Vuoden mittaisessa vapaa-ajan projektissa muutin pakettiauton täysin toimivaksi matkailuautoksi. Projekti vaati kokonaisvaltaista suunnittelua, valtavan paljon tutkimusta ja käytännön tekemistä. Pilkoin jokaisen projektin kohdan pieniin osa-alueisiin, joiden toteuttaminen vaati joustavuutta ja laadun prioisoimista. Sain paljon apua läheisiltäni, mikä edellytti tehokasta viestintää ja johtamistaitoja stressaavissa olosuhteissa. Vanda on ehkä suurin ylepydenaiheeni ja ehdottomasti palkitsevin tekemistäni hankkeista.',
             en: 'I embarked on a journey to convert a van into a fully functional campervan, a year-long project requiring extensive planning, research, and hands-on work. With a methodical mindset, I tackled each aspect of the conversion, breaking down the process into manageable tasks. The project demanded resilience and a commitment to quality at every step. I received invaluable support from friends and family, requiring effective communication and leadership skills. The completed campervan stands as a testament to my DIY ingenuity and passion for hands-on craftsmanship. It represents a personal achievement and source of pride, marking the most rewarding endeavor I have undertaken.',
         },
+        carousel: [
+            {
+                img: vanda,
+            },
+            {
+                img: vandaKitchenView,
+                naturalRatio: true,
+            },
+            {
+                img: vandaBedInterior,
+            },
+            {
+                img: vandaMountainView,
+                naturalRatio: true,
+            },
+            {
+                img: vandaSkylightBuild,
+            },
+        ],
     },
     {
         slug: 'portfolio',
@@ -42,19 +63,12 @@ const OhterProjectsData = [
         cols: 1,
         desc: {
             fi: `Miten optimoida portfolio ja tietää, mitä mahdollinen työnantaja haluaa nähdä? Tätä lähdin selvittämää A/ B - testeillä ja Google Analyticsin avulla.Ensimmäisen valmiin version saatuani alkutalvesta 2021 hain kymmeniä ja kymmeniä työpaikkoja ja selvitin, mitä mahdollinen työnantajani oli portfoliostani katsonut.Muokkasin niin toiminnallisuuksia kuin sisältöä tämän perusteella - olen itse niin suunnitellut kuin koodannut tämän portfolion.Auta toki sinäkin, ja kerro, jos jokin ei mielestäsi toimi.`,
-            en: 'How to optimize a portfolio and know what a potential employer wants to see? I set out to explore this through A/ B testing and Google Analytics.After completing the initial version in early winter 2021, I applied to dozens of jobs and analyzed what potential employers had viewed in my portfolio.Based on this feedback, I made adjustments to both functionality and content - I have both designed and programmed this portfolio. Feel free to share your thoughts if something does not seem to work.',
+            en: `How do you optimize a portfolio and understand what a potential employer wants to see? I set out to explore this through A/B testing and Google Analytics.
+
+After completing the initial version in early 2021, I applied to dozens of jobs and analysed how potential employers interacted with my portfolio. Based on what I learned, I iterated on both the functionality and content. I have designed and programmed the portfolio myself, using the process to explore how design, code and user behaviour interact.
+
+The latest iteration took just one evening. I used Claude to help implement and refine small details that would have been unnecessarily time-consuming to build from scratch for a personal project. It was a good reminder that with the right tools, ideas that would previously have been too tedious to implement can become quick experiments.`,
         },
-        carousel: [
-            {
-                img: portfolio,
-            },
-            {
-                img: portfolioBP,
-            },
-            {
-                img: portfolioS,
-            },
-        ],
     },
 ];
 

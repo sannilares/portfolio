@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
-import React, { useEffect } from 'react';
+import React, {
+  useEffect, useRef, useState,
+} from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 import Carousel from 'react-material-ui-carousel';
@@ -27,12 +29,45 @@ function ProjectMedia(props) {
     video,
     image,
   } = props;
+  const containerRef = useRef(null);
+  const naturalRatioRef = useRef(null);
+  const [imgHeight, setImgHeight] = useState(null);
+
+  const recalcHeight = () => {
+    if (naturalRatioRef.current && containerRef.current) {
+      setImgHeight(containerRef.current.clientWidth * naturalRatioRef.current);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', recalcHeight);
+    return () => window.removeEventListener('resize', recalcHeight);
+  }, []);
 
   if (carousel) {
     return (
-      <Carousel autoPlay={false}>
-        {carousel.map((item, i) => <img key={i} src={item.img} alt="" style={{ width: '100%' }} />)}
-      </Carousel>
+      <div className="projectDetailCarousel" ref={containerRef}>
+        <Carousel autoPlay={false}>
+          {carousel.map((item, i) => (
+            <img
+              key={i}
+              src={item.img}
+              alt=""
+              className="projectDetailCarouselImg"
+              style={{
+                height: imgHeight ? `${imgHeight}px` : undefined,
+                objectFit: item.naturalRatio ? 'contain' : 'cover',
+              }}
+              onLoad={(e) => {
+                if (i === 0 && !naturalRatioRef.current) {
+                  naturalRatioRef.current = e.target.naturalHeight / e.target.naturalWidth;
+                  recalcHeight();
+                }
+              }}
+            />
+          ))}
+        </Carousel>
+      </div>
     );
   }
   if (video) {
@@ -74,7 +109,7 @@ function ProjectDetail() {
         <>
           <h2 className="projectDetailTitle">{project.title[lang]}</h2>
           <div className="projectDetailMedia">
-            <ProjectMedia carousel={project.carousel} video={project.video} image={project.img} />
+            <ProjectMedia key={project.slug} carousel={project.carousel} video={project.video} image={project.img} />
           </div>
           {project.aiGeneratedImage && (
             <p className="projectDetailImageNote"><FormattedMessage id="projectImageAiNote" /></p>
