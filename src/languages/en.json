@@ -1,6 +1,9 @@
 {
     "UIUX": "Selected projects",
+    "UIUXIntro1": "My work has gradually moved from designing interfaces toward solving broader problems — understanding users, business needs and the systems behind the experience.",
+    "UIUXIntro2": "These projects span UX/UI design, service design, experimentation and functional architecture.",
     "otherProjects": "Personal projects",
+    "otherProjectsIntro": "Things I've built, designed, organised, or otherwise spent far too much time thinking about.",
     "cursorHeadline": "So nice to have you here!",
     "cursor": "Move your cursor on top of an image to get more information.",
     "language": "Suomeksi",

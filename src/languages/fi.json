@@ -1,6 +1,9 @@
 {
-    "UIUX": "Käytettävyys",
-    "otherProjects": "Muut projektit",
+    "UIUX": "Valitut projektit",
+    "UIUXIntro1": "Työni on vähitellen siirtynyt käyttöliittymien suunnittelusta kohti laajempien kokonaisuuksien ratkaisemista sekä käyttäjien tarpeiden, liiketoiminnan tavoitteiden ja käyttökokemuksen taustalla olevien järjestelmien ymmärtämistä.",
+    "UIUXIntro2": "Projektit yhdistävät UX/UI-suunnittelua, palvelumuotoilua, iteratiivista prosessia ja toiminnallista suunnittelua.",
+    "otherProjects": "Omat projektit",
+    "otherProjectsIntro": "Asioita, joita olen rakentanut, suunnitellut, organisoinut – tai joiden parissa olen yksinkertaisesti käyttänyt aivan liikaa aikaa.",
     "cursorHeadline": "Ihanaa, että eksyit tänne!",
     "cursor": "Siirrä kursori kuvan päälle taikka klikkaa kuvaa saadaksesi lisää tietoa.",
     "language": "In English",

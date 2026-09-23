@@ -42,16 +42,16 @@ function Portfolio() {
     });
   }, [hash]);
 
-  const uiuxIntro = lang === 'en' ? (
+  const uiuxIntro = (
     <>
-      <p>My work has gradually moved from designing interfaces toward solving broader problems — understanding users, business needs and the systems behind the experience.</p>
-      <p>These projects span UX/UI design, service design, experimentation and functional architecture.</p>
+      <p><FormattedMessage id="UIUXIntro1" /></p>
+      <p><FormattedMessage id="UIUXIntro2" /></p>
     </>
-  ) : null;
+  );
 
-  const otherProjectsIntro = lang === 'en' ? (
-    <p>Things I&apos;ve built, designed, organised, or otherwise spent far too much time thinking about.</p>
-  ) : null;
+  const otherProjectsIntro = (
+    <p><FormattedMessage id="otherProjectsIntro" /></p>
+  );
 
   return (
     <div>
