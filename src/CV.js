@@ -5,6 +5,9 @@ import './CV.css';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import ReactDOM from 'react-dom';
 import Button from '@material-ui/core/Button';
+import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
+import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
+import SchoolIcon from '@material-ui/icons/School';
 import { injectIntl } from 'react-intl';
 import mina from './assets/sanni.jpg';
 import phoneImg from './assets/call-24px.svg';
@@ -152,9 +155,10 @@ function Introduction(props) {
           <p className="introTitle">{title}</p>
           <p className="introText">{paragraphs}</p>
           <div className="CVButtons">
-            <Button onClick={() => navigateDownTo('cv.workExperience')}>{intl.formatMessage({ id: 'cv.workExperience' })}</Button>
-            <Button onClick={() => navigateDownTo('cv.education')}>{intl.formatMessage({ id: 'cv.education' })}</Button>
-            <Button onClick={() => navigateDownTo('cv.skills')}>{intl.formatMessage({ id: 'cv.skills' })}</Button>          </div>
+            <Button variant="outlined" startIcon={<WorkOutlineIcon />} onClick={() => navigateDownTo('cv.workExperience')}>{intl.formatMessage({ id: 'cv.workExperience' })}</Button>
+            <Button variant="outlined" startIcon={<EmojiEventsIcon />} onClick={() => navigateDownTo('cv.skills')}>{intl.formatMessage({ id: 'cv.skills' })}</Button>
+            <Button variant="outlined" startIcon={<SchoolIcon />} onClick={() => navigateDownTo('cv.education')}>{intl.formatMessage({ id: 'cv.education' })}</Button>
+          </div>
         </div>
       </div>
     );
@@ -246,9 +250,11 @@ function CV(props) {
 
         {/* List of skills */}
         <div className="section">
-          <Skills id="cv.skills" headline={intl.formatMessage({ id: 'cv.skills' })} type={intl.formatMessage({ id: 'cv.skillThemeTools' })} skill={translateWithLineBreaks(intl, 'cv.skillListTools')} />
-          <Skills type={intl.formatMessage({ id: 'cv.skillThemeProcess' })} skill={translateWithLineBreaks(intl, 'cv.skillListProcess')} />
-          <Skills type={intl.formatMessage({ id: 'cv.skillThemeProgramming' })} skill={translateWithLineBreaks(intl, 'cv.skillListProgramming')} />
+          <Skills id="cv.skills" headline={intl.formatMessage({ id: 'cv.skills' })} type={intl.formatMessage({ id: 'cv.skillThemeDesign' })} skill={intl.formatMessage({ id: 'cv.skillListDesign' })} />
+          <Skills type={intl.formatMessage({ id: 'cv.skillThemeBusiness' })} skill={intl.formatMessage({ id: 'cv.skillListBusiness' })} />
+          <Skills type={intl.formatMessage({ id: 'cv.skillThemeTech' })} skill={intl.formatMessage({ id: 'cv.skillListTech' })} />
+          <Skills type={intl.formatMessage({ id: 'cv.skillThemeWays' })} skill={intl.formatMessage({ id: 'cv.skillListWays' })} />
+          <Skills type={intl.formatMessage({ id: 'cv.skillThemeCertificates' })} skill={intl.formatMessage({ id: 'cv.skillListCertificates' })} />
           <Skills type={intl.formatMessage({ id: 'cv.skillThemeOther' })} skill={translateWithLineBreaks(intl, 'cv.skillListOther')} />
         </div>
 
