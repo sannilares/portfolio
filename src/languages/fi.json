@@ -5,6 +5,8 @@
     "cursor": "Siirrä kursori kuvan päälle taikka klikkaa kuvaa saadaksesi lisää tietoa.",
     "language": "In English",
     "back": "poistu",
+    "backToProjects": "Takaisin projekteihin",
+    "projectNotFound": "Projektia ei löytynyt.",
     "hello": "Hei",
     "welcome": "Ja tervetuloa tutustumaan portfoliooni!",
     "design": "Käytettävyys, design ja tekniikka.",

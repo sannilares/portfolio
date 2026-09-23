@@ -5,10 +5,6 @@ import vaestoliittoR from './assets/vaestoliitto-R.png';
 import LT from './assets/LT.png';
 import LTBP from './assets/LT-BP.png';
 import LTSR from './assets/LT-SR.png';
-import peukku from './assets/peukku.png';
-import portfolio from './assets/Portfolio.png';
-import portfolioBP from './assets/portfolio-BP.png';
-import portfolioS from './assets/portfolio-S.png';
 import poppankki from './assets/pop.png';
 import poppankkiBP from './assets/POP-BP.png';
 import poppankkiS from './assets/POP-S.png';
@@ -18,6 +14,7 @@ import poppankkiR from './assets/POP-R.png';
 
 const UIUXData = [
   {
+    slug: 'increasing-mortgage-uptake',
     img: poppankki,
     title: {
       fi: 'Asuntolaina-asiakkaiden lisääminen',
@@ -44,6 +41,7 @@ const UIUXData = [
     ],
   },
   {
+    slug: 'new-from-old',
     img: LT,
     title: {
       fi: 'Vanhasta uutta',
@@ -67,41 +65,7 @@ const UIUXData = [
     ],
   },
   {
-    img: peukku,
-    title: {
-      fi: 'Sovelluksen luominen',
-      en: 'App creation',
-    },
-    cols: 1,
-    desc: {
-      fi: `Kimppakyytisovelluksen käyttöliittymän luominen ideoinnista toteutukseen.Tiimimme suunnitteli ja määritteli projektin vaatimukset alusta alkaen.Fasilitoin alustavaa käyttäjätestausta ja haastatteluja designvalintojen tekemiseksi.Figman avulla laadin rautalankamallin, visut ja sovelluksen prototyypin.`,
-      en: 'As the lead designer, I drawed a ride-sharing app interface. Starting from scratch, our team planned and defined project requirements and conducted benchmarking analysis. I facilitated initial user testing and interviews to inform design decisions. Leveraging Figma, I crafted wireframes, prototypes, and visual designs.',
-    },
-  },
-  {
-    img: portfolio,
-    title: {
-      fi: 'Portfolio',
-      en: 'Portfolio',
-    },
-    cols: 1,
-    desc: {
-      fi: `Miten optimoida portfolio ja tietää, mitä mahdollinen työnantaja haluaa nähdä? Tätä lähdin selvittämää A/ B - testeillä ja Google Analyticsin avulla.Ensimmäisen valmiin version saatuani alkutalvesta 2021 hain kymmeniä ja kymmeniä työpaikkoja ja selvitin, mitä mahdollinen työnantajani oli portfoliostani katsonut.Muokkasin niin toiminnallisuuksia kuin sisältöä tämän perusteella - olen itse niin suunnitellut kuin koodannut tämän portfolion.Auta toki sinäkin, ja kerro, jos jokin ei mielestäsi toimi.`,
-      en: 'How to optimize a portfolio and know what a potential employer wants to see? I set out to explore this through A/ B testing and Google Analytics.After completing the initial version in early winter 2021, I applied to dozens of jobs and analyzed what potential employers had viewed in my portfolio.Based on this feedback, I made adjustments to both functionality and content - I have both designed and programmed this portfolio. Feel free to share your thoughts if something does not seem to work.',
-    },
-    carousel: [
-      {
-        img: portfolio,
-      },
-      {
-        img: portfolioBP,
-      },
-      {
-        img: portfolioS,
-      },
-    ],
-  },
-  {
+    slug: 'growth-hacking',
     img: vaestoliitto,
     title: {
       fi: 'Kasvuhakkerointia',

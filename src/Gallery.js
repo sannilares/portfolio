@@ -3,6 +3,7 @@ import React from 'react';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import Tilt from 'react-tilt';
+import { Link } from 'react-router-dom';
 
 const gridContainerStyle = {
   height: 'auto',
@@ -11,21 +12,19 @@ const gridContainerStyle = {
 
 function Gallery(props) {
   const {
+    id,
     headline,
     intro,
     columns,
     data,
     webCellHeight,
-    setHeadline,
-    setTileData,
-    setOpen,
     screenSize,
     spacing,
     lang,
   } = props;
 
   return (
-    <div className="headlineContainer">
+    <div className="headlineContainer" id={id}>
       <div className="block">
         <p className="blockHeader">{headline}</p>
       </div>
@@ -36,18 +35,13 @@ function Gallery(props) {
             {data.map((tile) => (
               <GridListTile component="div" className="gridListTile" key={tile.img} cols={tile.cols || 1}>
                 <Tilt options={{ max: 8, scale: 1.03 }} className="gridListTilt">
-                  <img
-                    className="gridListTiltImg"
-                    onMouseOver={() => {
-                      setHeadline(tile.title[lang]);
-                      setTileData(tile);
-                    }}
-                    onClick={() => {
-                      setOpen(true);
-                    }}
-                    src={tile.img}
-                    alt={tile.title}
-                  />
+                  <Link to={`/project/${tile.slug}`} className="gridListTiltLink">
+                    <img
+                      className="gridListTiltImg"
+                      src={tile.img}
+                      alt={tile.title[lang]}
+                    />
+                  </Link>
                 </Tilt>
               </GridListTile>
             ))}
@@ -59,14 +53,12 @@ function Gallery(props) {
 }
 
 Gallery.propTypes = {
+  id: PropTypes.string,
   columns: PropTypes.number,
   data: PropTypes.array,
   headline: PropTypes.object,
   intro: PropTypes.node,
   lang: PropTypes.string,
-  setTileData: PropTypes.func,
-  setOpen: PropTypes.func,
-  setHeadline: PropTypes.func,
   screenSize: PropTypes.string,
   spacing: PropTypes.number,
   webCellHeight: PropTypes.number,

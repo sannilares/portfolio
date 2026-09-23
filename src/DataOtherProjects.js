@@ -1,10 +1,13 @@
 import veikko from './assets/Veikot.png';
-import otanko from './assets/otankoshorts.png';
 import vanda from './assets/vandadrawing.png';
+import portfolio from './assets/Portfolio.png';
+import portfolioBP from './assets/portfolio-BP.png';
+import portfolioS from './assets/portfolio-S.png';
 
 
 const OhterProjectsData = [
     {
+        slug: 'editor-in-chief',
         img: veikko,
         title: {
             fi: 'Veikon päätoimittaja',
@@ -17,18 +20,7 @@ const OhterProjectsData = [
         },
     },
     {
-        img: otanko,
-        title: {
-            fi: 'Otanko',
-            en: 'Otanko merch',
-        },
-        cols: 1,
-        desc: {
-            fi: 'Olen toiminut Otangon toimarina sekä hallituksessa viestintäpäällikkönä. Matkan varrellan on tullut niin suunniteltua Otangolle omia tuotteita, kuin erilaisia tapahtumia, valokuvauksesta vuosijuhliin. Otangon tuotteiden suunnittelu on virkistävää vaihtelua muun suunnittelutyön rinnalle: fyysisten tuotteiden suunnittelu vaati yllättävän paljon lisätekijöitä digituotteisiin verrattuna. Otangolla toimiminen on hionut organisointi- ja johtamistaitojani, sekä opettanut viestinnän merkityksen organisaatioissa, välillä kantapään kautta.',
-            en: 'While volunteering at Otanko, I took on the responsibility of designing, organizing, and ordering merchandise to enhance club engagement and promote our brand. In addition, I held a position within the club board as the Head of Communications, contibuting to the organization and execution of various club events. These experiences have not only honed my organizational and leadership skills but also enriched my professional development.',
-        },
-    },
-    {
+        slug: 'campervan-vanda',
         img: vanda,
         title: {
             fi: 'Matkailupaku Vanda',
@@ -39,6 +31,30 @@ const OhterProjectsData = [
             fi: 'Vuoden mittaisessa vapaa-ajan projektissa muutin pakettiauton täysin toimivaksi matkailuautoksi. Projekti vaati kokonaisvaltaista suunnittelua, valtavan paljon tutkimusta ja käytännön tekemistä. Pilkoin jokaisen projektin kohdan pieniin osa-alueisiin, joiden toteuttaminen vaati joustavuutta ja laadun prioisoimista. Sain paljon apua läheisiltäni, mikä edellytti tehokasta viestintää ja johtamistaitoja stressaavissa olosuhteissa. Vanda on ehkä suurin ylepydenaiheeni ja ehdottomasti palkitsevin tekemistäni hankkeista.',
             en: 'I embarked on a journey to convert a van into a fully functional campervan, a year-long project requiring extensive planning, research, and hands-on work. With a methodical mindset, I tackled each aspect of the conversion, breaking down the process into manageable tasks. The project demanded resilience and a commitment to quality at every step. I received invaluable support from friends and family, requiring effective communication and leadership skills. The completed campervan stands as a testament to my DIY ingenuity and passion for hands-on craftsmanship. It represents a personal achievement and source of pride, marking the most rewarding endeavor I have undertaken.',
         },
+    },
+    {
+        slug: 'portfolio',
+        img: portfolio,
+        title: {
+            fi: 'Portfolio',
+            en: 'Portfolio',
+        },
+        cols: 1,
+        desc: {
+            fi: `Miten optimoida portfolio ja tietää, mitä mahdollinen työnantaja haluaa nähdä? Tätä lähdin selvittämää A/ B - testeillä ja Google Analyticsin avulla.Ensimmäisen valmiin version saatuani alkutalvesta 2021 hain kymmeniä ja kymmeniä työpaikkoja ja selvitin, mitä mahdollinen työnantajani oli portfoliostani katsonut.Muokkasin niin toiminnallisuuksia kuin sisältöä tämän perusteella - olen itse niin suunnitellut kuin koodannut tämän portfolion.Auta toki sinäkin, ja kerro, jos jokin ei mielestäsi toimi.`,
+            en: 'How to optimize a portfolio and know what a potential employer wants to see? I set out to explore this through A/ B testing and Google Analytics.After completing the initial version in early winter 2021, I applied to dozens of jobs and analyzed what potential employers had viewed in my portfolio.Based on this feedback, I made adjustments to both functionality and content - I have both designed and programmed this portfolio. Feel free to share your thoughts if something does not seem to work.',
+        },
+        carousel: [
+            {
+                img: portfolio,
+            },
+            {
+                img: portfolioBP,
+            },
+            {
+                img: portfolioS,
+            },
+        ],
     },
 ];
 

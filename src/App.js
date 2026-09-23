@@ -10,6 +10,7 @@ import {
 import Navbar from './Navbar';
 import CV from './CV';
 import PortfolioHeader from './PortfolioHeader';
+import ProjectDetail from './ProjectDetail';
 import Footer from './Footer';
 
 const theme = createTheme({
@@ -43,6 +44,9 @@ function App() {
             <Switch>
               <Route path="/cv">
                 <CV />
+              </Route>
+              <Route path="/project/:slug">
+                <ProjectDetail />
               </Route>
               <Route path="/">
                 <PortfolioHeader />
