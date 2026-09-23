@@ -1,6 +1,7 @@
 import vaestoliitto from './assets/vaestoliitto.png';
 import LT from './assets/LT.png';
 import poppankki from './assets/pop.png';
+import designingAcrossSystems from './assets/DesigningAcrossSystems.jpeg';
 
 
 
@@ -48,16 +49,44 @@ The biggest challenge was finding a balance between the needs of different stake
     },
   },
   {
+    slug: 'designing-across-systems',
+    img: designingAcrossSystems,
+    aiGeneratedImage: true,
+    title: {
+      fi: 'Toiminnalista arkkitehtuuria järjestelmien välillä',
+      en: 'Designing across systems',
+    },
+    cols: 1,
+    desc: {
+      fi: `Laajassa projektissa rakennettiin integraatioita eri organisaatioiden ja niiden järjestelmien välille. Työskentelin projektissa sekä toiminnallisena arkkitehtina että toiminnallisena suunnittelijana, joten pääsin tarkastelemaan kokonaisuutta sekä laajemmin järjestelmien että tarkemmin loppukäyttäjän näkökulmasta.
+
+Olen osallistunut järjestelmätarpeiden määrittelyyn, organisaatioiden välisiin keskusteluihin ja tiedon kartoittamiseen sekä siihen, miten tieto liikkuu eri järjestelmien välillä. Samalla olen suunnitellut käyttöliittymätarpeita ja pohtinut esimerkiksi käyttöoikeuksia, virhetilanteita ja muita tarpeita, jotka vaikuttavat siihen, miten palvelu toimii käytännössä.
+
+Projektissa olen oppinut yhdistämään tekniset reunaehdot käyttäjien tarpeisiin ja hahmottamaan palvelua kokonaisuutena yksittäisten screenien sijaan. Erityisen kiinnostavaa on ollut pohtia, miten useiden organisaatioiden, järjestelmien ja käyttäjäryhmien tarpeet täytyy sovittaa yhteen.`,
+      en: `This large-scale project focused on building integrations between multiple organizations and their systems. My role combined functional architecture and functional design, giving me the opportunity to work both with the bigger picture and the details of how the system should work for its users.
+
+I took part in discussions around system requirements, mapped data between different systems, and helped define how information should move through the service. Alongside the technical and organizational requirements, I worked on user interface needs, authorization, error handling, and other situations that shape how the service works in practice.
+
+Working across these different levels has taught me to connect technical constraints with user needs and to consider the whole service rather than just individual screens. It has also given me experience in navigating complex systems where different organizations, requirements, and users all need to work together.`,
+    },
+  },
+  {
     slug: 'growth-hacking',
     img: vaestoliitto,
     title: {
       fi: 'Kasvuhakkerointia',
-      en: 'Growth Hacking',
+      en: 'Finding the right readers',
     },
     cols: 1,
     desc: {
       fi: `Toteutimme kasvuhakkeroinnin projektin Väestöliiton blogille kävijämäärän lisäämiseksi ja käyttäjien sitouttamiseksi.Lähestyimme tätä tavoitetta iteratiivisesti monin eri keinoin, kuten haastattelemalla bloggereita, analysoimalla blogin analytiikkaa, tekemällä A / B - testausta ja yhteistyötä sidosryhmien kanssa.Tämä johti merkittävään kasvuun blogin lukijamäärässä, korostaen datavetoisten strategioiden ja iteratiivisten parannusten tehokkuutta.`,
-      en: 'A team undertook a growth hacking project for the blog of Väestöliitto to address low visitor engagement despite its valuable content.Implemented a multifaceted approach including research, interviews with bloggers, analytics analysis, A/ B testing, and collaboration with stakeholders to enhance visibility and appeal to a broader audience. This resulted in a significant increase in blog readership, highlighting the effectiveness of data- driven strategies and iterative improvements.',
+      en: `This project focused on increasing readership for a well-established blog with valuable content but relatively low visitor engagement. Instead of focusing on visual redesign, we looked for ways to better understand the people the blog was trying to reach and what could encourage them to engage with its content.
+
+We combined interviews with bloggers, analysis of existing visitor data, A/B testing, and collaboration with different stakeholders. We tested changes both on the blog itself and in how its content was marketed, using the results to guide the next iteration. This allowed us to gradually identify potential audiences, understand their behaviour, and improve how the blog reached them.
+
+One of the biggest things I learned was that understanding users does not always start with interviews. Existing data can reveal a lot about who users are, what they are looking for, and how they interact with a service. The project also showed me the value of small, measurable experiments: even relatively minor changes can provide direct feedback when you have a clear metric to follow.
+
+This became one of my favourite projects. Seeing readership grow as a result of our experiments made the impact of each iteration tangible, while the project strengthened my ability to combine user insight, data, and experimentation when designing digital experiences.`,
     },
   },
 ];

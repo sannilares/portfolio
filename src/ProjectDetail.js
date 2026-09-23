@@ -76,6 +76,9 @@ function ProjectDetail() {
           <div className="projectDetailMedia">
             <ProjectMedia carousel={project.carousel} video={project.video} image={project.img} />
           </div>
+          {project.aiGeneratedImage && (
+            <p className="projectDetailImageNote"><FormattedMessage id="projectImageAiNote" /></p>
+          )}
           <div className="projectDetailDesc" style={{ whiteSpace: 'break-spaces' }}>
             {get(project, `desc.${lang}`)}
           </div>

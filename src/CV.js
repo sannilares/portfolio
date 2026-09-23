@@ -234,7 +234,8 @@ function CV(props) {
 
         {/* Work experience */}
         <div className="bgColor section">
-          <Experience id="cv.workExperience" headline={intl.formatMessage({ id: 'cv.workExperience' })} title={intl.formatMessage({ id: 'cv.taitoJob' })} company={intl.formatMessage({ id: 'cv.taito' })} time="5/2021-6/2024" description={intl.formatMessage({ id: 'cv.taitoDesc' })} />
+          <Experience id="cv.workExperience" headline={intl.formatMessage({ id: 'cv.workExperience' })} title={intl.formatMessage({ id: 'cv.twodayJob' })} company={intl.formatMessage({ id: 'cv.twoday' })} time="3/2025-present" description={intl.formatMessage({ id: 'cv.twodayDesc' })} />
+          <Experience title={intl.formatMessage({ id: 'cv.taitoJob' })} company={intl.formatMessage({ id: 'cv.taito' })} time="5/2021-6/2024" description={intl.formatMessage({ id: 'cv.taitoDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.thesisJob' })} company={intl.formatMessage({ id: 'cv.thesis' })} time="2/2023-9/2023" description={intl.formatMessage({ id: 'cv.thesisDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.subrosaJob' })} company={intl.formatMessage({ id: 'cv.subrosa' })} time="4/2020-5/2021" description={intl.formatMessage({ id: 'cv.subrosaDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.NAPCONJob' })} company={intl.formatMessage({ id: 'cv.NAPCON' })} time="5/2020-8/2020" description={intl.formatMessage({ id: 'cv.NAPCONDesc' })} />

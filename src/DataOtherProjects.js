@@ -24,7 +24,7 @@ const OhterProjectsData = [
         img: vanda,
         title: {
             fi: 'Matkailupaku Vanda',
-            en: 'Campervan Vanda',
+            en: 'Converting Van',
         },
         cols: 1,
         desc: {
@@ -37,7 +37,7 @@ const OhterProjectsData = [
         img: portfolio,
         title: {
             fi: 'Portfolio',
-            en: 'Portfolio',
+            en: 'Prompting portfolio',
         },
         cols: 1,
         desc: {

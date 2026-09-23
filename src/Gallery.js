@@ -33,7 +33,7 @@ function Gallery(props) {
         <div className="gallery">
           <GridList style={gridContainerStyle} cellHeight={webCellHeight} spacing={spacing} className={screenSize} cols={columns}>
             {data.map((tile) => (
-              <GridListTile component="div" className="gridListTile" key={tile.img} cols={tile.cols || 1}>
+              <GridListTile component="div" className="gridListTile" key={tile.slug} cols={tile.cols || 1}>
                 <Link to={`/project/${tile.slug}`} className="gridListTiltLink">
                   <Tilt options={{ max: 8, scale: 1.03 }} className="gridListTilt">
                     <img
