@@ -14,7 +14,6 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import UIUXData from './DataUIUX';
-import graphicsData from './DataGraphics';
 import Gallery from './Gallery';
 import OhterProjectsData from './DataOtherProjects';
 
@@ -92,6 +91,10 @@ function Portfolio({ intl }) {
     </>
   ) : null;
 
+  const otherProjectsIntro = lang === 'en' ? (
+    <p>Things I&apos;ve built, designed, organised, or otherwise spent far too much time thinking about.</p>
+  ) : null;
+
   return (
     <div>
       {chosenOnes && (
@@ -122,23 +125,10 @@ function Portfolio({ intl }) {
         lang={lang}
       />
 
-      {/* Graphical design */}
-      <Gallery
-        headline={<FormattedMessage id="graphicalDesign" />}
-        columns={bigScreen ? 3 : 1}
-        data={graphicsData}
-        webCellHeight={webCellHeight}
-        setHeadline={setHeadline}
-        setTileData={setTileData}
-        setOpen={setOpen}
-        screenSize={screenSize}
-        spacing={spacing}
-        lang={lang}
-      />
-
       {/* Ohter projects */}
       <Gallery
         headline={<FormattedMessage id="otherProjects" />}
+        intro={otherProjectsIntro}
         columns={bigScreen ? 3 : 1}
         data={OhterProjectsData}
         webCellHeight={webCellHeight}
