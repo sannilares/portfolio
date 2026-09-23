@@ -1,10 +1,5 @@
 import vaestoliitto from './assets/vaestoliitto.png';
-import vaestoliittoBP from './assets/vaestoliitto-BP.png';
-import vaestoliittoS from './assets/vaestoliitto-S.png';
-import vaestoliittoR from './assets/vaestoliitto-R.png';
 import LT from './assets/LT.png';
-import LTBP from './assets/LT-BP.png';
-import LTSR from './assets/LT-SR.png';
 import poppankki from './assets/pop.png';
 
 
@@ -34,24 +29,23 @@ The project resulted in customer profiles and a service journey that helped iden
     img: LT,
     title: {
       fi: 'Vanhasta uutta',
-      en: 'New from old',
+      en: 'Digital Employment Services',
     },
     cols: 1,
     desc: {
       fi: 'Kuinka parhaiten auttaa opiskelijoita ja työnhakijoita tunnistamaan oleellisimmat taitonsa ja artikuloimaan ne kesken työnhakuprosessin eri aloilla ja ympäri Suomea? Käyttöliittymäsuunnittelua projektissa, jossa käyttöliittymätarpeita syntyi lisää nopeaa tahtia.',
-      en: 'How to best assist students and job seekers in recognizing and articulating their skills while finding specialized job search and workplace services tailored to various industries and regions. UI Design in a project, where service requirements emerged throughout the project.',
+      en: `A digital service that allows job seekers to share their information with employers, employment services and education providers, helping connect people with relevant opportunities and support.
+
+I worked with a Finnish technology company on UI/UX design for several years across different projects. This employment service became one of my favourites. The project started with a design sprint and continued through close collaboration with the client team, developing and refining the service along the way.
+
+One of the most interesting challenges was bringing together several different perspectives around the same data. Job seekers, employers and employment service providers all interact with the service from different starting points, using different interfaces and with different needs. At the same time, the service needed to fit into the company's wider ecosystem of existing products — both visually and functionally.
+
+This made the project a valuable exercise in designing across multiple interfaces and balancing existing functionality with new ideas. Rather than designing a single interface in isolation, I had to consider how different parts of the service connect and how changes affect the wider system.
+
+Accessibility and transparency in data handling were also central throughout the work. They pushed me to look at the service from different perspectives and think carefully about how information is presented, shared and understood by different users.
+
+The biggest challenge was finding a balance between the needs of different stakeholders, the limitations of existing functionality and the opportunities to create something new. It taught me a lot about designing services that need to work not just for one user, but as part of a larger ecosystem.`,
     },
-    carousel: [
-      {
-        img: LT,
-      },
-      {
-        img: LTBP,
-      },
-      {
-        img: LTSR,
-      },
-    ],
   },
   {
     slug: 'growth-hacking',
@@ -65,20 +59,6 @@ The project resulted in customer profiles and a service journey that helped iden
       fi: `Toteutimme kasvuhakkeroinnin projektin Väestöliiton blogille kävijämäärän lisäämiseksi ja käyttäjien sitouttamiseksi.Lähestyimme tätä tavoitetta iteratiivisesti monin eri keinoin, kuten haastattelemalla bloggereita, analysoimalla blogin analytiikkaa, tekemällä A / B - testausta ja yhteistyötä sidosryhmien kanssa.Tämä johti merkittävään kasvuun blogin lukijamäärässä, korostaen datavetoisten strategioiden ja iteratiivisten parannusten tehokkuutta.`,
       en: 'A team undertook a growth hacking project for the blog of Väestöliitto to address low visitor engagement despite its valuable content.Implemented a multifaceted approach including research, interviews with bloggers, analytics analysis, A/ B testing, and collaboration with stakeholders to enhance visibility and appeal to a broader audience. This resulted in a significant increase in blog readership, highlighting the effectiveness of data- driven strategies and iterative improvements.',
     },
-    carousel: [
-      {
-        img: vaestoliitto,
-      },
-      {
-        img: vaestoliittoBP,
-      },
-      {
-        img: vaestoliittoS,
-      },
-      {
-        img: vaestoliittoR,
-      },
-    ],
   },
 ];
 
