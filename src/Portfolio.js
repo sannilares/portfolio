@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import './Portfolio.css';
-import { Divider } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import ReactDOM from 'react-dom';
 import { useTheme } from '@material-ui/core/styles';
@@ -98,16 +97,7 @@ function Portfolio({ intl }) {
   return (
     <div>
       {chosenOnes && (
-        <>
-          <ColorPortal />
-          <div className="description">
-            <div className="descHeadline">
-              <h2>{headline}</h2>
-              <Divider light />
-              <p className="descText">{get(tileData, `desc.${lang}`).split('\n')[0]}</p>
-            </div>
-          </div>
-        </>
+        <ColorPortal />
       )}
 
       {/* UI/UX Design */}
