@@ -6,7 +6,7 @@ import LT from './assets/LT.png';
 import LTBP from './assets/LT-BP.png';
 import LTSR from './assets/LT-SR.png';
 import peukku from './assets/peukku.png';
-import portfolio from './assets/portfolio.png';
+import portfolio from './assets/Portfolio.png';
 import portfolioBP from './assets/portfolio-BP.png';
 import portfolioS from './assets/portfolio-S.png';
 import poppankki from './assets/pop.png';
