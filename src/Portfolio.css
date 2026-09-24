@@ -101,6 +101,12 @@
   align-items: center;
   text-decoration: none;
   color: inherit;
+  border-radius: 4px;
+}
+
+.gridListTiltLink:focus-visible {
+  outline: 3px solid rgb(75, 145, 148);
+  outline-offset: 2px;
 }
 
 .gridListTiltImg {
