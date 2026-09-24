@@ -93,7 +93,7 @@ function Buttons(props) {
   // Mobile menu:
     <div className="mobileFlex">
       <IconButton aria-label="Menu" aria-haspopup="true" onClick={handleClick}>
-        <MenuRoundedIcon />
+        <MenuRoundedIcon aria-hidden="true" />
       </IconButton>
       <StyledMenu
         id="navMobile"
