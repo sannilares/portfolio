@@ -33,8 +33,7 @@
   margin-bottom: 30px;
 }
 
-.projectDetailMedia img,
-.projectDetailMedia .video {
+.projectDetailMedia img {
   max-width: 100%;
 }
 

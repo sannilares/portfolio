@@ -9,6 +9,10 @@ const UIUXData = [
   {
     slug: 'increasing-mortgage-uptake',
     img: poppankki,
+    imgAlt: {
+      fi: 'Kuvakaappaus POP Pankin verkkosivustosta, jossa näkyy blogiartikkeli "Opiskelijayhteistyöllä uutta näkökulmaa asuntolainaamiseen", esitettynä pöytätietokoneen näytöllä.',
+      en: 'Screenshot of the POP Pankki website showing a blog article titled "Student collaboration brings a new perspective to mortgage lending", displayed on a desktop monitor mockup.',
+    },
     title: {
       fi: 'Asuntolaina-asiakkaiden lisääminen',
       en: 'Rethinking the Mortgage Journey',
@@ -28,6 +32,10 @@ The project resulted in customer profiles and a service journey that helped iden
   {
     slug: 'new-from-old',
     img: LT,
+    imgAlt: {
+      fi: 'Kolme puhelinnäkymää työnhakupalvelun sovelluksesta: suodatettu koulutushaku, henkilökohtainen työnhakuprofiili ja työntekijän näkymä työnantajalistauksesta.',
+      en: 'Three mobile phone screens showing a job-seeker profile app, including a filtered course search view, a personal job-seeker profile, and an employee\'s view of employer listings.',
+    },
     title: {
       fi: 'Vanhasta uutta',
       en: 'Digital Employment Services',
@@ -52,6 +60,10 @@ The biggest challenge was finding a balance between the needs of different stake
     slug: 'designing-across-systems',
     img: designingAcrossSystems,
     aiGeneratedImage: true,
+    imgAlt: {
+      fi: 'Tekoälyn luoma kuva värikkäistä muistilapuista, joissa on lukukelvotonta käsinkirjoitettua tekstiä, kiinnitettynä lasipintaan, jossa on pisaroita.',
+      en: 'AI-generated image of colorful sticky notes with illegible handwritten text, stuck on a rain-speckled glass surface.',
+    },
     title: {
       fi: 'Toiminnalista arkkitehtuuria järjestelmien välillä',
       en: 'Designing across systems',
@@ -73,6 +85,10 @@ Working across these different levels has taught me to connect technical constra
   {
     slug: 'growth-hacking',
     img: vaestoliitto,
+    imgAlt: {
+      fi: 'Kuvakaappaus Väestöliiton verkkosivujen etusivusta, jossa näkyy ruudukko blogiartikkeleita ja kampanjakuvia, esitettynä pöytätietokoneen näytöllä.',
+      en: 'Screenshot of the Väestöliitto website homepage displaying a grid of blog articles and campaign visuals, shown on a desktop monitor mockup.',
+    },
     title: {
       fi: 'Kasvuhakkerointia',
       en: 'Finding the right readers',

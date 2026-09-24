@@ -11,6 +11,10 @@ const OhterProjectsData = [
     {
         slug: 'editor-in-chief',
         img: veikko,
+        imgAlt: {
+            fi: 'Kolme Veikko-koululehden kansisuunnittelua: yksi kuvituksella marionetista ja sen käsittelijän kädestä, ja kaksi mustavalkoista valokuvakantta, joissa näkyy koulurakennus ja puun kaarna.',
+            en: 'Three cover designs of the school magazine Veikko: one with an illustration of a marionette and its puppeteer\'s hand, and two black-and-white photographic covers featuring a school building and tree bark.',
+        },
         title: {
             fi: 'Veikon päätoimittaja',
             en: 'Editor-In-Chief',
@@ -36,26 +40,50 @@ const OhterProjectsData = [
         carousel: [
             {
                 img: vanda,
+                alt: {
+                    fi: 'Kuvitus valkoisesta Ford Transit -pakettiautosta sivulta kuvattuna.',
+                    en: 'Illustration of a white Ford Transit van, side view.',
+                },
             },
             {
                 img: vandaKitchenView,
                 naturalRatio: true,
+                alt: {
+                    fi: 'Sisäkuva matkailuauton keittiöstä, jossa on sisäänrakennetut puiset laatikostot ja seinällä kokoelma maustepurkkeja, sekä auki olevan sivuoven takaa näkyvä venesatama auringonlaskussa.',
+                    en: 'Interior view of the campervan\'s kitchen area, with built-in wooden drawers and a collection of spice jars on the wall, and a marina visible through the open side door at sunset.',
+                },
             },
             {
                 img: vandaBedInterior,
+                alt: {
+                    fi: 'Sisäkuva matkailuauton sängystä, jossa on kuvioidut verhot, värikkäillä pompomeilla koristeltu valosarja sekä tyynyjä ja peittoja sängyllä.',
+                    en: 'Interior view of the campervan\'s bed area, with patterned curtains, a string of colorful pom-pom lights, and pillows and blankets on the bed.',
+                },
             },
             {
                 img: vandaMountainView,
                 naturalRatio: true,
+                alt: {
+                    fi: 'Näkymä matkailuauton vierestä vuoristoon ja metsään osittain pilvisen taivaan alla, tie näkyvissä alempana.',
+                    en: 'View from beside the campervan overlooking a mountain range and forest under a partly cloudy sky, with a road visible below.',
+                },
             },
             {
                 img: vandaSkylightBuild,
+                alt: {
+                    fi: 'Pakettiauton sisätila muutostyön aikana: näkyvissä paljas metallirunko, eristelevyt ja äskettäin asennettu puukehyksinen kattoikkuna.',
+                    en: 'Interior of the van during conversion, showing the bare metal frame, insulation panels, and a newly installed roof skylight with a wooden frame.',
+                },
             },
         ],
     },
     {
         slug: 'portfolio',
         img: portfolio,
+        imgAlt: {
+            fi: 'Kuvakaappaus portfolion etusivusta: mustavalkoinen kuva Sannista hymyilemässä tuulessa liehuvin hiuksin, vieressä turkoosi sivupalkki suomenkielisellä tervehdyksellä, esitettynä pöytätietokoneen näytöllä.',
+            en: 'Screenshot of the portfolio website\'s homepage, showing a black-and-white photo of Sanni smiling with hair blowing in the wind next to a teal sidebar with a Finnish greeting, displayed on a desktop monitor mockup.',
+        },
         title: {
             fi: 'Portfolio',
             en: 'Prompting portfolio',

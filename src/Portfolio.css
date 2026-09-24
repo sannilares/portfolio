@@ -90,6 +90,8 @@
   flex: 1 1 auto;
   min-height: 0;
   width: 100%;
+  padding: 8px 0;
+  box-sizing: border-box;
 }
 
 .gridListTiltLink {
@@ -105,8 +107,13 @@
 }
 
 .gridListTiltLink:focus-visible {
-  outline: 3px solid rgb(75, 145, 148);
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 0 5px rgb(75, 145, 148);
+}
+
+.gridListTiltLink:focus-visible .gridListTiltImg {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 0 5px rgb(75, 145, 148);
 }
 
 .gridListTiltImg {

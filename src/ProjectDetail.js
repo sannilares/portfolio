@@ -26,8 +26,8 @@ function get(object, path) {
 function ProjectMedia(props) {
   const {
     carousel,
-    video,
     image,
+    imageAlt,
   } = props;
   const containerRef = useRef(null);
   const naturalRatioRef = useRef(null);
@@ -52,7 +52,7 @@ function ProjectMedia(props) {
             <img
               key={i}
               src={item.img}
-              alt=""
+              alt={item.alt ? item.alt[lang] : ''}
               className="projectDetailCarouselImg"
               style={{
                 height: imgHeight ? `${imgHeight}px` : undefined,
@@ -70,22 +70,15 @@ function ProjectMedia(props) {
       </div>
     );
   }
-  if (video) {
-    return (
-      <video className="video" controls>
-        <source src={video} type="video/webm" />
-      </video>
-    );
-  }
   return (
-    <img src={image} alt="" className="dialogImg" />
+    <img src={image} alt={imageAlt ? imageAlt[lang] : ''} className="dialogImg" />
   );
 }
 
 ProjectMedia.propTypes = {
   carousel: PropTypes.array,
   image: PropTypes.string,
-  video: PropTypes.string,
+  imageAlt: PropTypes.object,
 };
 
 function ProjectDetail() {
@@ -109,7 +102,7 @@ function ProjectDetail() {
         <>
           <h2 className="projectDetailTitle">{project.title[lang]}</h2>
           <div className="projectDetailMedia">
-            <ProjectMedia key={project.slug} carousel={project.carousel} video={project.video} image={project.img} />
+            <ProjectMedia key={project.slug} carousel={project.carousel} image={project.img} imageAlt={project.imgAlt} />
           </div>
           {project.aiGeneratedImage && (
             <p className="projectDetailImageNote"><FormattedMessage id="projectImageAiNote" /></p>
