@@ -163,6 +163,10 @@
   padding-bottom: 4px;
 }
 
+.experienceGridSmallExtraSpace {
+  margin-bottom: 20px;
+}
+
 .workCompany {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;  

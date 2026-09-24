@@ -21,6 +21,7 @@ function Experience(props) {
     time,
     description,
     id,
+    extraMobileSpace,
   } = props;
 
   const theme = useTheme();
@@ -44,7 +45,7 @@ function Experience(props) {
   return (
     <div className="smallScreen">
       <p className="title">{headline}</p>
-      <div className="experienceGridSmall">
+      <div className={`experienceGridSmall${extraMobileSpace ? ' experienceGridSmallExtraSpace' : ''}`}>
         <p className="workTitle">{title}</p>
         <p className="workTimeSmall">{time}</p>
       </div>
@@ -57,6 +58,7 @@ function Experience(props) {
 Experience.propTypes = {
   company: PropTypes.string,
   description: PropTypes.string,
+  extraMobileSpace: PropTypes.bool,
   headline: PropTypes.string,
   id: PropTypes.string,
   time: PropTypes.string,
@@ -238,7 +240,7 @@ function CV(props) {
 
         {/* Work experience */}
         <div className="bgColor section">
-          <Experience id="cv.workExperience" headline={intl.formatMessage({ id: 'cv.workExperience' })} title={intl.formatMessage({ id: 'cv.twodayJob' })} company={intl.formatMessage({ id: 'cv.twoday' })} time="3/2025-present" description={intl.formatMessage({ id: 'cv.twodayDesc' })} />
+          <Experience id="cv.workExperience" headline={intl.formatMessage({ id: 'cv.workExperience' })} title={intl.formatMessage({ id: 'cv.twodayJob' })} company={intl.formatMessage({ id: 'cv.twoday' })} time="3/2025-present" description={intl.formatMessage({ id: 'cv.twodayDesc' })} extraMobileSpace />
           <Experience title={intl.formatMessage({ id: 'cv.taitoJob' })} company={intl.formatMessage({ id: 'cv.taito' })} time="5/2021-6/2024" description={intl.formatMessage({ id: 'cv.taitoDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.thesisJob' })} company={intl.formatMessage({ id: 'cv.thesis' })} time="2/2023-9/2023" description={intl.formatMessage({ id: 'cv.thesisDesc' })} />
           <Experience title={intl.formatMessage({ id: 'cv.subrosaJob' })} company={intl.formatMessage({ id: 'cv.subrosa' })} time="4/2020-5/2021" description={intl.formatMessage({ id: 'cv.subrosaDesc' })} />
